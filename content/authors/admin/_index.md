@@ -46,8 +46,8 @@ interests:
 education:
   - area: PhD in Electrical Engineering
     institution: University of California, Riverside
-    date_start: 2019-04
-    date_end: 2023-06
+    date_start: 2019-04-01
+    date_end: 2023-06-15
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
