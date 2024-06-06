@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: "Website in Construction"
-date: 2022-10-24
+date: 2024-06-05
 type: landing
 
 design:
@@ -103,7 +103,7 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
   - block: cta-card
-    demo: false # Only display this section in the Hugo Blox Builder demo site
+    demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
       title: 👉 Build your own academic website like this
       text: |-
