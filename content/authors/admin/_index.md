@@ -49,10 +49,10 @@ education:
     date_start: 2019-04-01
     date_end: 2023-06-15
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      A Personalized Behavior-Aware Motion Planning Framework for Intelligent Vehicle Operation_. Supervised by [Dr. Guoyuan Wu](https://profiles.ucr.edu/app/home/profile/guoyuanw) and [Dr. Matthew Barth](https://profiles.ucr.edu/app/home/profile/barth). Published 9 journal articles, 14 conference articles, and 1 book chapter.
     button:
       text: 'Read Thesis'
-      url: 'https://example.com'
+      url: 'https://escholarship.org/content/qt7vw7j4qx/qt7vw7j4qx_noSplash_ada68491a381359c268116ce76ec66e4.pdf?t=rygcug'
   - area: M.Eng. in Mechanical Engineering (Robotics)
     institution: University of Maryland, College Park
     date_start: 2017-01-21
@@ -120,26 +120,26 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Skiing
         description: ''
         percent: 60
         icon: person-simple-walk
-      - name: Cats
+      - name: Soccer
         description: ''
         percent: 100
         icon: cat
-      - name: Photography
+      - name: Hiking
         description: ''
         percent: 80
         icon: camera
 
 languages:
   - name: English
-    percent: 100
-  - name: Chinese
     percent: 75
-  - name: Portuguese
-    percent: 25
+  - name: Mandarin
+    percent: 100
+  - name: Cantoness
+    percent: 90
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -174,4 +174,4 @@ awards:
 ---
 
 ## About Me
-Xishun Liao is a Postdoctoral Researcher in the UCLA Mobility Lab. He specializes in motion prediction/planning/control for autonomous driving, urban mobility modeling, applied AI/ML, driving/traffic simulation, vehicle-to-everything (V2X), and intelligent transportation system. Through his research, Dr. Liao aims to construct a comprehensive, human-centered AI-based digital twin for urban mobility system. This framework integrates data-driven insights across multiple scales—from individual humans and vehicles to overall traffic—to enhance traffic optimization and support the evolution of autonomous driving technologies. His work emphasizes improving future transportation systems' safety, sustainability, efficiency, accessibility, and equity, reinforcing a people-centric approach.
+Xishun Liao is a Postdoctoral Researcher in the UCLA Mobility Lab. He specializes in motion prediction/planning/control for autonomous driving, urban mobility modeling, applied AI/ML, driving/traffic simulation, vehicle-to-everything (V2X), and intelligent transportation system. Through his research, Dr. Liao aims to construct a comprehensive, human-centered AI-based digital twin for urban mobility system. This framework integrates data-driven insights across multiple scales—from individual humans and vehicles to overall traffic—to enhance traffic optimization and support the evolution of autonomous driving technologies. His work emphasizes improving future transportation systems' safety, sustainability, efficiency, accessibility, and equity, emphasizing the pursuit of human-centered mobility.
