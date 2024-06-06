@@ -65,7 +65,7 @@ education:
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: B.Eng. in Mechanical Engineering and Automation
+  - area: B.Eng. in Mechanical Engineering
     institution: Beijing University of Post and Telecommunication
     date_start: 2012-09-01
     date_end: 2016-06-01
