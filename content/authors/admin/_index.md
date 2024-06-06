@@ -44,7 +44,7 @@ interests:
   - Information Retrieval
 
 education:
-  - area: PhD in Electrical Engineering
+  - area: Ph.D. in Electrical Engineering
     institution: University of California, Riverside
     date_start: 2019-04-01
     date_end: 2023-06-15
@@ -53,7 +53,7 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
+  - area: M.Eng. in Mechanical Engineering (Robotics)
     institution: University of Maryland, College Park
     date_start: 2017-01-21
     date_end: 2018-12-18
@@ -64,8 +64,8 @@ education:
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BEng Beijing University of Post and Telecommunication
-    institution: Massachusetts Institute of Technology
+  - area: B.Eng. in Mechanical Engineering and Automation
+    institution: Beijing University of Post and Telecommunication
     date_start: 2012-09-01
     date_end: 2016-06-01
 #    summary: |
@@ -76,19 +76,19 @@ education:
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: ''
+    company_name: ''
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: ''
     date_end: ''
     summary: |2-
       Responsibilities include:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+  - position: ''
+    company_name: ''
     company_url: ''
     company_logo: ''
     date_start: 2016-01-01
@@ -174,5 +174,4 @@ awards:
 ---
 
 ## About Me
-
-I am a Postdoctoral Researcher in the UCLA Mobility Lab working with Prof. Jiaqi Ma. My research interests include in digital twin, applied AI/ML, autonomous driving, human behavior modeling, and intelligent transportation system.
+Xishun Liao is a Postdoctoral Researcher in the UCLA Mobility Lab. He specializes in motion prediction/planning/control for autonomous driving, urban mobility modeling, applied AI/ML, driving/traffic simulation, vehicle-to-everything (V2X), and intelligent transportation system. Through his research, Dr. Liao aims to construct a comprehensive, human-centered AI-based digital twin for urban mobility system. This framework integrates data-driven insights across multiple scales—from individual humans and vehicles to overall traffic—to enhance traffic optimization and support the evolution of autonomous driving technologies. His work emphasizes improving future transportation systems' safety, sustainability, efficiency, accessibility, and equity, reinforcing a people-centric approach.
