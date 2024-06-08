@@ -40,8 +40,9 @@ profiles:
 
 interests:
   - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Digital Twin
+  - Autonomous Driving
+  - Intelligent Transportation System
 
 education:
   - area: Ph.D. in Electrical Engineering
@@ -53,7 +54,7 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://escholarship.org/content/qt7vw7j4qx/qt7vw7j4qx_noSplash_ada68491a381359c268116ce76ec66e4.pdf?t=rygcug'
-  - area: M.Eng. in Mechanical Engineering (Robotics)
+  - area: M.Eng. in Mechanical Engineering
     institution: University of Maryland, College Park
     date_start: 2017-01-21
     date_end: 2018-12-18
@@ -64,7 +65,7 @@ education:
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: B.Eng. in Mechanical Engineering and Automation
+  - area: B.Eng. in Mechanical Engineering
     institution: Beijing University of Post and Telecommunication
     date_start: 2012-09-01
     date_end: 2016-06-01
