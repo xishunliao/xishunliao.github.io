@@ -39,10 +39,10 @@ profiles:
     url: https://scholar.google.com/citations?user=iE6y2pQAAAAJ&hl=en
 
 interests:
-  - Artificial Intelligence
   - Digital Twin
   - Autonomous Driving
   - Intelligent Transportation System
+  - Artificial Intelligence
 
 education:
   - area: Ph.D. in Electrical Engineering
@@ -77,45 +77,43 @@ education:
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: ''
-    company_name: ''
+  - position: 'Postdoctoral Scholar'
+    company_name: 'University of California, Los Angeles'
     company_url: ''
     company_logo: ''
-    date_start: ''
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: ''
-    company_name: ''
+    date_start: 2023-07-01
+    date_end: 
+    #summary: |
+    #  Utilizes data-driven, deep learning algorithms to refine the understanding and prediction of human driving behaviors at a micro-scale for intelligent vehicles, and to model human travel behaviors at a macro-scale for comprehensive transportation systems, leveraging the advanced capabilities of Digital Twin technology. Key components of the project include:
+    #  - Driver Behavior: Dedicated to model personalized driving behavior and vehicular interactions.
+    #  - Human Travel Behavior: Focused on modeling human mobility patterns across cities and diverse geographical regions.Mobility System Modeling: Focused on modeling human mobility patterns across cities and diverse geographical regions.
+    
+    - position: 'Research Intern'
+    company_name: 'Honda Research Institute USA'
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    date_start: 2021-09-27
+    date_end: 2022-03-18
+    #summary: |
+    #  Aimed to create an autonomy system that is deeply attuned to human needs and behaviors. Focused on driver profile modeling based on driving style, personality traits, and emotion state
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python
-        description: ''
+      - name: Coding Skills
+        description: Python/PyTorch, C#, C++, MATLAB
         percent: 80
         icon: code-bracket
-      - name: Data Science
+      - name: Software
+        description: Unity, CARLA/Unreal, VISSIM, SUMO, SolidWorks, ANSYS
+        percent: 80
+        icon: chart-bar
+      - name: Deep Learning
         description: ''
         percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
         icon: circle-stack
   - name: Hobbies
     color: '#eeac02'
@@ -175,4 +173,4 @@ awards:
 ---
 
 ## About Me
-Xishun Liao is a Postdoctoral Researcher in the UCLA Mobility Lab. He specializes in motion prediction/planning/control for autonomous driving, urban mobility modeling, applied AI/ML, driving/traffic simulation, vehicle-to-everything (V2X), and intelligent transportation system. Through his research, Dr. Liao aims to construct a comprehensive, human-centered AI-based digital twin for urban mobility system. This framework integrates data-driven insights across multiple scales—from individual humans and vehicles to overall traffic—to enhance traffic optimization and support the evolution of autonomous driving technologies. His work emphasizes improving future transportation systems' safety, sustainability, efficiency, accessibility, and equity, emphasizing the pursuit of human-centered mobility.
+Xishun Liao is a Postdoctoral Researcher in the UCLA Mobility Lab. He specializes in motion prediction/planning/control for autonomous driving, urban mobility modeling, applied AI/ML, driving/traffic simulation, vehicle-to-everything (V2X), and intelligent transportation system. Through his research, Dr. Liao aims to construct a comprehensive, human-centered AI-based digital twin for urban mobility system. This framework integrates data-driven insights across multiple scales—from individual humans and vehicles to overall traffic—to enhance future transportation systems' safety, sustainability, efficiency, accessibility, and equity, emphasizing the pursuit of human-centered mobility.
