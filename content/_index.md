@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "5rem"
+  spacing: "3rem"
 
 sections:
   - block: resume-biography-3
@@ -35,7 +35,6 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission.
         My research is geared towards creating an autonomy system that is deeply attuned to human needs and behaviors, leveraging the advanced capabilities of Digital Twin technology. Key research topics include:
         - Human Behavior Study for Human-Centered Autonomy
         - Motion Planning and Decision Making for Connected and Automated Vehicles
@@ -43,6 +42,7 @@ sections:
         Please reach out to collaborate 😃
     design:
       columns: '1'
+
   - block: collection
     id: papers
     content:
@@ -54,16 +54,7 @@ sections:
     design:
       view: article-grid
       columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ""
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
-    design:
-      view: citation
+
   - block: collection
     id: talks
     content:
@@ -74,6 +65,7 @@ sections:
     design:
       view: article-grid
       columns: 1
+
   - block: collection
     id: news
     content:
@@ -103,6 +95,18 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
+        
+  - block: collection
+    content:
+      title: Recent Publications
+      text: ""
+      filters:
+        folders:
+          - publication
+        exclude_featured: false
+    design:
+      view: citation
+
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
