@@ -130,7 +130,7 @@ skills:
       - name: Hiking
         description: ''
         percent: 80
-        icon: camera
+        icon: person-simple-walk
 
 languages:
   - name: English
@@ -138,7 +138,7 @@ languages:
   - name: Mandarin
     percent: 100
   - name: Cantoness
-    percent: 90
+    percent: 100
 
 # Awards.
 #   Add/remove as many awards below as you like.
