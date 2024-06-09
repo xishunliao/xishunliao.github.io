@@ -1,12 +1,12 @@
 ---
 # Leave the homepage title empty to use the site title
-title: "Website in Construction"
+title: "in Construction"
 date: 2024-06-05
 type: landing
 
 design:
   # Default section spacing
-  spacing: "6rem"
+  spacing: "5rem"
 
 sections:
   - block: resume-biography-3
