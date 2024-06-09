@@ -88,7 +88,7 @@ work:
     #  - Driver Behavior: Dedicated to model personalized driving behavior and vehicular interactions.
     #  - Human Travel Behavior: Focused on modeling human mobility patterns across cities and diverse geographical regions.Mobility System Modeling: Focused on modeling human mobility patterns across cities and diverse geographical regions.
     
-    - position: 'Research Intern'
+  - position: 'Research Intern'
     company_name: 'Honda Research Institute USA'
     company_url: ''
     company_logo: ''

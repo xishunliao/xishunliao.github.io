@@ -44,6 +44,18 @@ sections:
       columns: '1'
 
   - block: collection
+    id: projects
+    content:
+      title: Research Projects
+      filters:
+        folders:
+          - project
+        featured_only: false
+    design:
+      view: article-grid
+      columns: 3
+
+  - block: collection
     id: papers
     content:
       title: Featured Publications
@@ -95,7 +107,7 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
-        
+
   - block: collection
     content:
       title: Recent Publications
