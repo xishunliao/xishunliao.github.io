@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Human-in-the-Loop Simulation Platform - Xishun Liao</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/project-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-detail-container {
+            padding-top: 6rem;  /* Increased top padding */
+        }
+
+        .project-title {
+            margin-bottom: 3rem;  /* Space after title */
+        }
+        
+        .project-detail-container section {
+            margin: 4rem 0;
+        }
+        
+        .main-image {
+            width: 100%;
+            max-width: 1000px;
+            margin: 3rem auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .video-container {
+            margin: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .video-container video {
+            width: 100%;
+            max-width: 800px;  /* Standardized smaller video size */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .media-caption {
+            margin-top: 1rem;
+            text-align: center;
+            color: #666;
+        }
+        
+        .project-features ul,
+        .project-impact ul {
+            margin: 1.5rem 0;
+        }
+        
+        .project-features li,
+        .project-impact li {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1><a href="../../../index.html">Xishun Liao</a></h1>
+            <div class="nav-links">
+                <a href="../../../index.html#about">About</a>
+                <a href="../../../index.html#research">Research</a>
+                <a href="../../publications.html">Publications</a>
+                <a href="../../projects.html">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-detail-container">
+        <h1 class="project-title" data-aos="fade-down">Multiplayer Human-in-the-Loop Simulation Platform</h1>
+
+        <img src="../../../images/MHuiL.png" alt="Multiplayer Human-in-the-Loop Simulation Platform" class="main-image" data-aos="fade-up">
+
+        <section class="project-overview" data-aos="fade-up">
+            <h2>Project Overview</h2>
+            <p>The Multiplayer Human-in-the-Loop Simulation Platform is an innovative research project that combines advanced traffic simulation with real-time human interaction. This platform enables multiple users to simultaneously participate in traffic scenarios, providing valuable insights into human behavior and decision-making in complex traffic situations.</p>
+        </section>
+
+        <section class="project-media" data-aos="fade-up">
+            <h2>Platform Demonstration</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="../../../videos/UnitySumo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="media-caption">Unity-SUMO Integration for Real-time Traffic Simulation</p>
+            </div>
+            
+            <div class="video-container">
+                <video controls>
+                    <source src="../../../videos/HuiL.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="media-caption">Human-in-the-Loop Simulation Interface</p>
+            </div>
+        </section>
+
+        <section class="project-features" data-aos="fade-up">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Real-time multiplayer interaction in traffic scenarios</li>
+                <li>Integration of SUMO traffic simulator for background traffic with algorithms</li>
+                <li>Unity game engine for realistic vehicle dynamic model, human-in-the-loop operation, and visualization</li>
+                <li>Synchronized simulation environment for multiple participants</li>
+                <li>Data collection and analysis of human driving behavior</li>
+                <li>Customizable traffic scenarios and environments</li>
+                <li>Network-based architecture for distributed simulation</li>
+            </ul>
+        </section>
+
+        <section class="project-impact" data-aos="fade-up">
+            <h2>Research Impact</h2>
+            <p>This platform contributes to:</p>
+            <ul>
+                <li>Understanding human behavior in complex traffic situations</li>
+                <li>Development and validation of autonomous driving algorithms</li>
+                <li>Training and evaluation of AI-based traffic management systems</li>
+                <li>Research in human-machine interaction in transportation</li>
+                <li>Study of collective behavior in traffic scenarios</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="../../../js/main.js"></script>
+</body>
+</html> 

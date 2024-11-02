@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge-based AI Application - Xishun Liao</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/project-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-title {
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-gallery figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .project-gallery img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .gallery-grid figure img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        figcaption {
+            margin-top: 1rem;
+            color: #666;
+            font-size: 0.95em;
+            padding: 0 10%;
+        }
+
+        @media (max-width: 768px) {
+            .project-gallery img,
+            .gallery-grid figure img {
+                max-width: 100%;
+            }
+            
+            figcaption {
+                padding: 0 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1><a href="../../../index.html">Xishun Liao</a></h1>
+            <div class="nav-links">
+                <a href="../../../index.html#about">About</a>
+                <a href="../../../index.html#research">Research</a>
+                <a href="../../publications.html">Publications</a>
+                <a href="../../projects.html">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-detail-container">
+        <h1 class="project-title" data-aos="fade-down">Knowledge-based AI Application in Transportation</h1>
+        
+        <section class="project-overview" data-aos="fade-up">
+            <h2>Project Overview</h2>
+            <p>Human travel trajectory mining is crucial for transportation systems, enhancing route optimization, traffic management, and the study of human travel patterns. While previous studies have primarily focused on spatial-temporal information, the integration of semantic data has been limited. We introduce a novel pipeline for human travel trajectory mining, annotating GPS trajectories with POIs and visit purpose.</p>
+        </section>
+
+        <section class="project-gallery" data-aos="fade-up">
+            <figure>
+                <img src="flow_diagram_new.png" alt="System Flow Diagram">
+                <figcaption>First application of LLM to POI classification with semantic information inference</figcaption>
+            </figure>
+        </section>
+
+        <section class="key-contributions" data-aos="fade-up">
+            <h2>Key Contributions</h2>
+            <ul>
+                <li>A novel data mining framework integrating LLM-based POI classification with probabilistic activity inference algorithm, bridging spatial-temporal and natural language analyses in trajectory mining.</li>
+                <li>Framework adaptability across various regional POI datasets without additional training, effectively handling incomplete data.</li>
+                <li>First application of LLM to POI classification, achieving precise point-level inference through semantic information.</li>
+            </ul>
+        </section>
+
+        <section class="results" data-aos="fade-up">
+            <h2>Results</h2>
+            <div class="results-highlight">
+                <ul>
+                    <li>93.4% accuracy and 96.1% F-1 score in POI classification</li>
+                    <li>91.7% accuracy with 92.3% F-1 score in activity inference</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="project-gallery" data-aos="fade-up">
+            <div class="gallery-grid">
+                <figure>
+                    <img src="poi_example_la_egypt.png" alt="POI Analysis">
+                    <figcaption>Framework adaptability demonstration across different regional POI datasets. Example of POIs and classification results from (a) LA county and (b) Egypt.</figcaption>
+                </figure>
+                <figure>
+                    <img src="TrajectoryXL.png" alt="Trajectory Analysis">
+                    <figcaption>Examples of semantic trajectories post-data mining: (a) Activity-annotated stay points in LA. (b) Activity timelines.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="../../../js/main.js"></script>
+</body>
+</html> 
