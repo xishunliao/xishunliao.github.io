@@ -1,13 +1,10 @@
 name: Deploy website to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
   push:
     branches: ["main"]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-# Provide permission to deploy to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -18,7 +15,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build website
   build:
     runs-on: ubuntu-latest
     steps:
@@ -30,9 +26,8 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: .  # This will upload your static files directly
+        path: .
 
-  # Deploy website to GitHub Pages
   deploy:
     environment:
       name: github-pages
