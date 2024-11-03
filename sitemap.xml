@@ -3,7 +3,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://xishunliao.github.io/</loc>
-        <lastmod>2024-11-03</lastmod>
+        <lastmod>2024-03-11T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -11,7 +11,7 @@
     <!-- Publications Page -->
     <url>
         <loc>https://xishunliao.github.io/pages/publications.html</loc>
-        <lastmod>2024-11-03</lastmod>
+        <lastmod>2024-03-11T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -19,7 +19,7 @@
     <!-- Projects Page -->
     <url>
         <loc>https://xishunliao.github.io/pages/projects.html</loc>
-        <lastmod>2024-11-03</lastmod>
+        <lastmod>2024-03-11T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -27,7 +27,7 @@
     <!-- CV -->
     <url>
         <loc>https://xishunliao.github.io/static/uploads/Xishun_CV_academic%20neat.pdf</loc>
-        <lastmod>2024-11-03</lastmod>
+        <lastmod>2024-03-11T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
