@@ -15,6 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');  // Replace with your tracking ID
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -29,7 +37,7 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" style="padding-top: 60px; margin-top: 20px;">
         <div class="container profile-container">
             <div class="profile-grid">
                 <div class="profile-info">
@@ -121,12 +129,36 @@
         </div>
     </footer>
 
-    <!-- Add this before closing body tag -->
-    <div style="text-align: center; margin: 2rem 0;">
-        <a href="https://info.flagcounter.com/heeson">
-            <img src="https://s11.flagcounter.com/count2/heeson/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
-        </a>
+    <!-- Replace the existing flag counter with this new counter section -->
+    <div class="visitor-stats" style="text-align: center; margin: 2rem 0; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
+        <div style="display: inline-flex; gap: 2rem; align-items: center;">
+            <!-- Keep your existing flag counter -->
+            <div>
+                <a href="https://info.flagcounter.com/heeson">
+                    <img src="https://s11.flagcounter.com/count2/heeson/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
+                </a>
+            </div>
+            <!-- Add new real-time counter -->
+            <div>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-visitor-counter"></div>
+            </div>
+            <!-- Add Google Analytics counter (optional) -->
+            <div id="ga-counter">
+                <span>Total Visits: </span>
+                <span id="visit-count">Loading...</span>
+            </div>
+        </div>
     </div>
+
+    <!-- Add this script before closing body tag -->
+    <script>
+        // Initialize Google Analytics counter
+        if (typeof ga !== 'undefined') {
+            ga('create', 'YOUR-GA-TRACKING-ID', 'auto');
+            ga('send', 'pageview');
+        }
+    </script>
 
     <script src="js/main.js"></script>
     <script src="js/scholar-stats.js"></script>

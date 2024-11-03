@@ -56,7 +56,8 @@ body {
 }
 
 .hero {
-    padding: 5rem 0 3rem 0;
+    padding-top: 60px;
+    margin-top: 20px;
     background: linear-gradient(to right, #2c3e50, #3498db);
     color: white;
     text-align: center;
@@ -210,7 +211,7 @@ body {
 }
 
 .profile-container {
-    padding: 1rem 0;
+    margin-top: 20px;
 }
 
 .profile-grid {
@@ -458,4 +459,22 @@ body {
 
 .nav-logo:hover {
     color: var(--secondary-color);
+}
+
+/* Add or update these styles in your style.css */
+.projects-container {
+    padding-top: 300px; /* Increased from 160px to add even more space before title */
+    margin-top: 100px; /* Increased from 40px for additional spacing */
+}
+
+.page-title {
+    margin-bottom: 2rem; /* Keeping the reduced space after title */
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+/* If you want even more space specifically for the projects page */
+.projects-grid {
+    margin-top: 1.5rem; /* Slightly reduced from 2rem */
 }
