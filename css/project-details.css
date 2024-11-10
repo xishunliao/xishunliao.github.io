@@ -136,4 +136,247 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
-} 
+}
+
+.project-figures {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.figure-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.figure-row.center {
+    grid-template-columns: 1fr;
+}
+
+.figure-row.center figure {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.project-figures figure {
+    margin: 0;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-figures img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.project-figures figcaption {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .figure-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .figure-row.center figure {
+        width: 100%;
+    }
+}
+
+.full-width-figure {
+    grid-column: 1 / -1;
+    max-width: 1000px;
+    margin: 2rem auto !important;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.centered-figure {
+    max-width: 600px;
+    margin: 2rem auto !important;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.large-figure {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.large-figure img,
+.single-column-figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figure figcaption {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.intro-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.intro-text {
+    flex: 3;
+}
+
+.intro-figure {
+    flex: 2;
+    margin: 0;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 2rem;
+}
+
+.intro-figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+    }
+    
+    .intro-figure {
+        position: static;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+.project-header {
+    margin: 4rem 0 3rem;  /* Increased top margin from default */
+    text-align: center;
+}
+
+.project-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: #666;
+}
+
+/* For larger screens, add even more space */
+@media (min-width: 768px) {
+    .project-header {
+        margin: 6rem 0 4rem;  /* Even more space on desktop */
+    }
+}
+
+/* Modify the grid layout for the last figure */
+.project-figures figure:last-child {
+    grid-column: 1 / -1; /* Make it span full width */
+    max-width: 600px; /* More reasonable max-width */
+    margin: 2rem auto !important;
+}
+
+.project-figures figure:last-child img {
+    width: 100%;
+    height: auto;
+}
+
+.project-figures figure:last-child figcaption {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.single-column-figure {
+    grid-column: 1 / -1;
+    max-width: 600px;
+    margin: 2rem auto !important;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.results-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.dual-figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.single-figure {
+    display: flex;
+    justify-content: center;
+}
+
+.single-figure figure {
+    width: 75%;  /* Increased from 50% to 75% to make it wider */
+}
+
+figure {
+    margin: 0;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+figure figcaption {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dual-figures {
+        grid-template-columns: 1fr;
+    }
+    
+    .single-figure figure {
+        width: 100%;
+    }
+}

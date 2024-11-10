@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Profile Project - Xishun Liao</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/project-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1><a href="../../../index.html">Xishun Liao</a></h1>
+            <div class="nav-links">
+                <a href="../../../index.html#about">About</a>
+                <a href="../../../index.html#research">Research</a>
+                <a href="../../publications.html">Publications</a>
+                <a href="../../projects.html">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-detail-container">
+        <div class="project-header" data-aos="fade-down">
+            <h1>Driver Profile: Personality, Mood, and Driving Style</h1>
+            <div class="project-meta">
+                <span class="project-date">2021 - 2022</span>
+                <span class="project-location">UCR&Honda</span>
+            </div>
+        </div>
+
+        <div class="project-content" data-aos="fade-up">
+            <section class="project-section">
+                <h2>Introduction</h2>
+                <div class="intro-container">
+                    <div class="intro-text">
+                        <p>With the advent of advanced safety features and automated vehicles, driver safety has become critical in situations where the human is expected to disengage or drive partially. Understanding and modeling the complex relationships between driver personality traits, emotional states, and driving behaviors is vital for developing systems that can adapt to the user and earn their trust.</p>
+                        
+                        <p>Understanding the driving profile is challenging as it is composed of several factors, including driving style, mood states, and personality traits. To fulfill the purpose of modeling driver profiles, this paper proposed a comprehensive framework. A total of 28 licensed male drivers between the ages of 21 and 40 participated in the study; their driving behavior was recorded to create an integrated dataset. Additionally, mood states and personality traits were collected via surveys.</p>
+                        
+                        <p>The fuzzy logic inference system identified driving styles based on this integrated dataset. The relationship between driving styles, mood states, and a prediction model using random forest was developed for driving styles and personality types (obtained through clustering). Ultimately, findings from prediction can be utilized in risky driving style detection and driver preference sharing for the Mobility-as-a-Service purpose.</p>
+                    </div>
+                    <figure data-aos="fade-left" class="intro-figure">
+                        <img src="MPD.png" alt="Mood-Personality-Driving Style Relationship">
+                        <figcaption>The interconnected relationship between personality traits, mood states, and driving style.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Framework</h2>
+                <figure data-aos="fade-up" class="full-width-figure">
+                    <img src="Framework.png" alt="Research Framework">
+                    <figcaption>Our comprehensive framework integrates personality traits, mood states, and driving behavior data to enable real-time driving style prediction and personalized ADAS strategies.</figcaption>
+                </figure>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Analysis of personality traits and their impact on driving behavior</li>
+                    <li>Real-time mood detection and its influence on driving decisions</li>
+                    <li>Classification and prediction of driving styles</li>
+                    <li>Integration with driver assistance systems</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Methodology</h2>
+                <p>Our research combines psychological assessments, real-world driving data, and advanced machine learning techniques to create comprehensive driver profiles. This includes:</p>
+                <ul>
+                    <li>Personality assessment using standardized psychological tools</li>
+                    <li>Mood monitoring through various sensors and self-reporting</li>
+                    <li>Driving behavior analysis using vehicle operation data in Unreal Engine simulation</li>
+                    <li>Pattern recognition and behavioral prediction models</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Results & Visualizations</h2>
+                <div class="results-grid">
+                    <!-- First row -->
+                    <div class="dual-figures">
+                        <figure data-aos="fade-up">
+                            <img src="Simulation.png" alt="Driving Simulation">
+                            <figcaption>We conducted longitudinal studies using advanced driving simulators to collect integrated datasets of driver behavior under controlled conditions.</figcaption>
+                        </figure>
+                        <figure data-aos="fade-up">
+                            <img src="PersonalityCluster.png" alt="Personality Clusters">
+                            <figcaption>Analysis revealed distinct personality clusters among drivers, showing how different personality traits group together and influence driving behavior.</figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Middle single figure -->
+                    <div class="single-figure">
+                        <figure data-aos="fade-up">
+                            <img src="DrivingStyle.png" alt="Driving Style Classification">
+                            <figcaption>The resulting prediction model can identify risky driving styles before the journey begins, allowing for proactive ADAS interventions and personalized vehicle settings.</figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Last row -->
+                    <div class="dual-figures">
+                        <figure data-aos="fade-up">
+                            <img src="PvsMood.png" alt="Personality vs Mood Analysis">
+                            <figcaption>Our research uncovered significant correlations between personality traits and mood states, demonstrating how these factors interact to influence driving behavior.</figcaption>
+                        </figure>
+                        <figure data-aos="fade-up">
+                            <img src="PvsMood2.png" alt="Extended Personality-Mood Analysis">
+                            <figcaption>Further analysis showed how different personality types exhibit distinct patterns in mood variations, enabling more accurate prediction of driving styles.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="../../../js/main.js"></script>
+</body>
+</html> 
