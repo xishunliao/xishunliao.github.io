@@ -30,25 +30,46 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            width: 100%;
+            max-width: 1600px;
+            margin: 0;
+        }
+        
         .video-container {
-            margin: 3rem 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
+            margin: 0;
         }
         
+        .video-container.full-width {
+            grid-column: 1 / -1;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+        
+        .video-container iframe,
         .video-container video {
             width: 100%;
-            max-width: 800px;  /* Standardized smaller video size */
-            height: auto;
+            height: 300px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            object-fit: contain;
+            margin: 0;
         }
         
         .media-caption {
-            margin-top: 1rem;
+            margin: 0.25rem 0;
             text-align: center;
             color: #666;
+            width: 100%;
+            max-width: 800px;
+            display: block;
         }
         
         .project-features ul,
@@ -59,6 +80,79 @@
         .project-features li,
         .project-impact li {
             margin: 1rem 0;
+        }
+        
+        .project-media {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .project-media h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .video-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        
+        .video-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .video-item.full-width {
+            width: 100%;
+        }
+        
+        .video-item iframe,
+        .video-item video {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            object-fit: contain;
+        }
+        
+        .caption {
+            margin: 0.5rem 0;
+            text-align: center;
+            color: #666;
+        }
+        
+        @media (max-width: 1024px) {
+            .video-row {
+                flex-direction: column;
+            }
+            
+            .video-item iframe,
+            .video-item video,
+            .video-item.full-width video {
+                height: 450px;
+            }
+        }
+        
+        .image-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 3rem auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .image-caption {
+            margin-top: 1rem;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .video-item.full-width video {
+            height: 450px;
         }
     </style>
 </head>
@@ -78,45 +172,50 @@
     <main class="container project-detail-container">
         <h1 class="project-title" data-aos="fade-down">Multiplayer Human-in-the-Loop Simulation Platform</h1>
 
-        <img src="../../../images/MHuiL.png" alt="Multiplayer Human-in-the-Loop Simulation Platform" class="main-image" data-aos="fade-up">
-
         <section class="project-overview" data-aos="fade-up">
             <h2>Project Overview</h2>
             <p>The Multiplayer Human-in-the-Loop Simulation Platform is an innovative research project that combines advanced traffic simulation with real-time human interaction. This platform enables multiple users to simultaneously participate in traffic scenarios, providing valuable insights into human behavior and decision-making in complex traffic situations.</p>
         </section>
 
-        <section class="project-media" data-aos="fade-up">
+        <div class="image-container" data-aos="fade-up">
+            <img src="../../../images/MHuiL.png" alt="Multiplayer Human-in-the-Loop Simulation Platform" class="main-image">
+            <p class="image-caption">System Architecture of the Multiplayer Human-in-the-Loop Simulation Platform</p>
+        </div>
+
+        <section class="project-media">
             <h2>Platform Demonstration</h2>
-            <div class="video-container">
-                <iframe 
-                    width="100%" 
-                    height="450" 
-                    src="https://www.youtube.com/embed/RtrBonGGobg" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-                <p class="media-caption">Platform Overview Video</p>
+            <!-- First row -->
+            <div class="video-row">
+                <div class="video-item">
+                    <iframe 
+                        src="https://www.youtube.com/embed/RtrBonGGobg" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <p class="caption">Multiplayer Human-in-the-Loop Simulation Demo</p>
+                </div>
+                
+                <div class="video-item">
+                    <video controls>
+                        <source src="../../../videos/UnitySumo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="caption">Unity-SUMO Integration for Real-time Traffic Simulation</p>
+                </div>
             </div>
-            
-            <div class="video-container"></div>
-                <video controls>
-                    <source src="../../../videos/HuiL.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="media-caption">Human-in-the-Loop Simulation Interface</p>
-            </div>            
 
-            <div class="video-container">
-                <video controls>
-                    <source src="../../../videos/UnitySumo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="media-caption">Unity-SUMO Integration for Real-time Traffic Simulation</p>
+            <!-- Second row -->
+            <div class="video-row">
+                <div class="video-item full-width">
+                    <video controls>
+                        <source src="../../../videos/HuiL.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="caption">Human-in-the-Loop Simulation Interface</p>
+                </div>
             </div>
-            
-
         </section>
 
         <section class="project-features" data-aos="fade-up">
