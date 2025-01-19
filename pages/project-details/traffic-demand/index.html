@@ -12,11 +12,14 @@
 
         .visualization-container {
             max-width: 1090px;
-            margin: 2rem auto;
-            padding: 20px;
+            max-height: 450px; 
+            margin: 0 auto;
+            padding: 0;
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: fit-content;
+            position: relative;
         }
 
         .project-header {
@@ -31,7 +34,7 @@
         }
 
         .project-description {
-            max-width: 900px;
+            max-width: 1090px;
             margin: 0 auto 3rem;
             line-height: 1.8;
             color: #444;
@@ -41,13 +44,13 @@
 
         .visualization-section {
             background: #f8f9fa;
-            padding: 2rem 0;
-            margin: 2rem 0;
+            padding: 1rem 0;
+            margin: 1rem 0;
             border-radius: 8px;
         }
 
         .visualization-description {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto 2rem;
             padding: 0 20px;
             line-height: 1.6;
@@ -55,40 +58,68 @@
             color: #666;
         }
 
-        .controls {
-            margin-bottom: 20px;
+        .controls-container {
             text-align: center;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 4px;
+            width: fit-content;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
         }
 
         #main-wrapper {
             font-family: inconsolata, Monaco, lucida console, Consolas, courier new;
-            width: 1090px;
+            width: 100%;
             margin: 0 auto;
+            transform: scale(0.55);
+            transform-origin: top center;
+        }
+
+        .controls {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
         #speed {
             font-family: inconsolata, Monaco, lucida console, Consolas, courier new;
-            font-size: 13px;
+            font-size: 18px;
             text-transform: uppercase;
-            margin: 15px 0 20px 25px;
+            display: inline-block;
+            margin-left: 20px;
         }
 
         #speed .togglebutton {
-            padding: 3px;
+            padding: 5px 15px;
             text-align: center;
             border: 1px solid #ccc;
             cursor: pointer;
             float: left;
-            width: 60px;
+            width: 100px;
+            font-weight: bold;
         }
 
         #speed .togglebutton.current {
             color: #fff;
             background: #000;
             border: 1px solid #000;
+        }
+
+        #current_time {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+            display: inline-block;
+        }
+
+        #chart {
+            transform: scale(0.9);
+            transform-origin: top center;
+            margin: -20px auto 0;
         }
 
         .back-link {
@@ -109,7 +140,7 @@
 
         .methodology-section {
             margin: 3rem auto;
-            max-width: 900px;
+            max-width: 1000px;
             padding: 0 20px;
         }
 
@@ -118,23 +149,16 @@
             margin-bottom: 1.5rem;
         }
 
-        #current_time {
-            font-size: 2rem;
-            text-align: center;
-            margin: 1rem 0;
-            font-weight: bold;
-            color: #333;
-        }
-
         #note {
-            text-align: center;
-            margin: 1rem 0;
-            min-height: 2rem;
+            font-size: 1.2rem;
+            color: #333;
+            margin: 0;
+            display: inline-block;
         }
 
         .image-section {
             margin: 3rem auto;
-            max-width: 1000px;
+            max-width: 900px;
             padding: 0 20px;
         }
 
@@ -168,20 +192,15 @@
         </div>
 
         <div class="project-description">
-            <p>This research is conducted under the <a href="https://www.iarpa.gov/research-programs/haystac">Hidden Activity Signal and Trajectory Anomaly Characterization (HAYSTAC)</a> project, funded by The Intelligence Advanced Research Projects Activity (IARPA) at the Office of the Director of National Intelligence. HAYSTAC aims to establish models of "normal" human movement across times, locations, and people in order to characterize what makes an activity detectable as anomalous within the expanding corpus of global human trajectory data.</p>
-
-            <p>Human mobility plays a crucial role in transportation, urban planning, and public health. Advances in deep learning and the availability of diverse mobility data have transformed mobility modeling. However, existing deep learning models often focus on spatio-temporal patterns and struggle to capture the semantic interdependencies among activities, while also being limited by specific data sources. These challenges reduce their realism and adaptability.</p>
-            
-            <p>Traditional activity-based models (ABMs) face issues as well, relying on rigid assumptions and requiring extensive data, making them costly and difficult to adapt to new regions, especially those with limited conventional travel data.</p>
-            
-            <p>To address these limitations, we develop a novel generative deep learning approach for human mobility modeling and synthesis that incorporates both activity patterns and location trajectories using open-source data. The model can be fine-tuned with local data, allowing it to adapt to and accurately represent mobility patterns across diverse regions.</p>
+            <p>This research is conducted under the <a href="https://www.iarpa.gov/research-programs/haystac">Hidden Activity Signal and Trajectory Anomaly Characterization (HAYSTAC)</a> project, funded by The Intelligence Advanced Research Projects Activity (IARPA) at the Office of the Director of National Intelligence. HAYSTAC aims to establish models of "normal" human movement across times, locations, and people in order to characterize what makes an activity detectable as anomalous within the expanding corpus of global human trajectory data.</p>    
+            <p> We propose a deep learning model to generate synthetic human mobility data based on socio-demographic information and household characteristics. The model is transferable and can be fine-tuned with local data, making it suitable for data-limited regions. By leveraging HTS data, an effective loss function, and optimizing input construction, even a vanilla transformer model proves highly effective in addressing this complex problem. Additionally, we integrate mobility generation with activity location assignment, validating the model's performance by embedding generative travel demand into a large-scale simulation network.The model can be fine-tuned with local open-source data, allowing it to adapt to and accurately represent mobility patterns across diverse regions.</p>
         </div>
 
         <div class="image-section">
             <div class="image-container">
                 <img src="workflow.png" alt="DeepAct Model Workflow">
                 <div class="image-caption">
-                    Figure 1: We propose a deep learning model to generate synthetic human mobility data based on socio-demographic information and household characteristics. The model is transferable and can be fine-tuned with local data, making it suitable for data-limited regions. By leveraging HTS data, an effective loss function, and optimizing input construction, even a vanilla transformer model proves highly effective in addressing this complex problem. Additionally, we integrate mobility generation with activity location assignment, validating the model's performance by embedding generative travel demand into a large-scale simulation network.
+                    Figure 1: The DeepAct Model Workflow
                 </div>
             </div>
         </div>
@@ -193,27 +212,24 @@
             </div>
 
             <div class="visualization-container">
-                <div class="controls">
-                    <b>Color by:</b>
-                    <select id="ColorOptions" onchange="link_color_changed(this.value)">
-                        <option value="STATE" selected="selected">State</option>
-                        <option value="NODE">Sample ID</option>
-                    </select>
-                </div>
-
                 <div id="main-wrapper">
                     <div id="sidebar">
-                        <div id="current_time">00:15</div>
-                        
-                        <div id="speed">
-                            <div class="togglebutton slow current" data-val="slow">Slow</div>
-                            <div class="togglebutton medium" data-val="medium">Medium</div>
-                            <div class="togglebutton fast" data-val="fast">Fast</div>
-                            <div class="clr"></div>
+                        <div class="controls-container">
+                            <div id="current_time">06:10</div>
+                            <div id="note">2023-01-01, Thursday</div>
+                            <div id="speed">
+                                <div class="togglebutton medium" data-val="medium">Medium</div>
+                                <div class="togglebutton fast current" data-val="fast">Fast</div>
+                            </div>
                         </div>
 
-                        <div id="note"></div>
-                        <div id="cite"></div>
+                        <div class="color-controls">
+                            <b>Color by:</b>
+                            <select id="ColorOptions" onchange="link_color_changed(this.value)">
+                                <option value="STATE" selected="selected">State</option>
+                                <option value="NODE">Sample ID</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div id="chart"></div>
@@ -224,9 +240,12 @@
 
         <div class="image-section">
             <div class="image-container">
-                <img src="Simulation.png" alt="Simulation Results">
+                <video width="100%" controls>
+                    <source src="../../../videos/LAsim.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <div class="image-caption">
-                    Figure 2: The framework builds on the Multi-Agent Transport Simulation (MATSim) to tackle the challenges induced by urbanization and changing mobility patterns. By loading the synthesized travel demand into the LA roadway network, we can generate the synthetic traffic flow and further evaluate the transportation system performance based on the generated human mobility patterns.
+                    The framework builds on the Multi-Agent Transport Simulation (MATSim) to tackle the challenges induced by urbanization and changing mobility patterns. By loading the synthesized travel demand into the LA roadway network, we can generate the synthetic traffic flow and further evaluate the transportation system performance based on the generated human mobility patterns.
                 </div>
             </div>
         </div>
@@ -239,6 +258,51 @@
     </div>
 
     <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script>
+        // Initial settings
+        var USER_SPEED = "fast";
+        var speeds = {'medium': 100, 'fast': 5};
+        var curr_minute = 370;
+
+        // Override the timer function
+        window.onload = function() {
+            // Remove slow button and update UI
+            d3.select(".slow").remove();
+            d3.select(".medium").classed("current", false);
+            d3.select(".fast").classed("current", true);
+            d3.select("#current_time").text("06:10");
+
+            // Wait for DeepAct.js to initialize
+            setTimeout(function() {
+                // Force animation speed
+                USER_SPEED = "fast";
+                
+                // Clear any existing animation
+                if (typeof timer !== 'undefined' && timer._timer) {
+                    clearTimeout(timer._timer);
+                }
+                
+                // Force animation to restart
+                force.resume();
+                setTimeout(timer, 5);
+
+                // Update speed toggle handlers
+                d3.selectAll(".togglebutton")
+                    .on("click", function() {
+                        var val = d3.select(this).attr("data-val");
+                        d3.selectAll(".togglebutton").classed("current", false);
+                        d3.select("." + val).classed("current", true);
+                        USER_SPEED = val;
+                        
+                        // Restart animation with new speed
+                        if (typeof timer !== 'undefined' && timer._timer) {
+                            clearTimeout(timer._timer);
+                        }
+                        setTimeout(timer, speeds[val]);
+                    });
+            }, 1000);
+        };
+    </script>
     <script src="DeepAct.js"></script>
 </body>
 </html> 

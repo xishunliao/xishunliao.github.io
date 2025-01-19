@@ -44,19 +44,6 @@
         <article class="project-detail">
             <h1 class="project-title" data-aos="fade-down">Cyber-Physical Mobility System: Driver Digital Twin</h1>
             
-            <div class="project-hero" data-aos="fade-up">
-                <img src="../../../images/DriverDT1.png" alt="Driver Digital Twin System" class="hero-image">
-            </div>
-
-            <section class="project-section" data-aos="fade-up">
-                <h2>Introduction</h2>
-                <p>Connected and automated vehicles (CAVs) are supposed to share the road with human-driven vehicles (HDVs) in a foreseeable future. Therefore, considering the mixed traffic environment is more pragmatic, as the well-planned operation of CAVs may be interrupted by HDVs. In the circumstance that human behaviors have significant impacts, CAVs need to understand HDV behaviors to make safe actions.</p>
-                
-                <p>In this study, we develop a Driver Digital Twin (DDT) for the online prediction of personalized lane change behavior, allowing CAVs to predict surrounding vehicles' behaviors with the help of the digital twin technology. DDT is deployed on a vehicle-edge-cloud architecture, where the cloud server models the driver behavior for each HDV based on the historical naturalistic driving data, while the edge server processes the real-time data from each driver with his/her digital twin on the cloud to predict the personalized lane change maneuver.</p>
-                
-                <p>The proposed system is first evaluated on a human-in-the-loop co-simulation platform, and then in a field implementation with three passenger vehicles driving along an on/off ramp segment connecting to the edge server and cloud through the 4G/LTE cellular network. The lane change intention can be recognized in 6 seconds on average before the vehicle crosses the lane separation line, and the Mean Euclidean Distance between the predicted trajectory and GPS ground truth is 1.03 meters within a 4-second prediction window. Compared to the general model, using a personalized model can improve prediction accuracy by 27.8%.</p>
-            </section>
-
             <section class="project-section" data-aos="fade-up">
                 <h2>Demo Video: Personalized Lane Change Prediction</h2>
                 <p>The following video demonstrates how our personalized model predicts lane change behavior in both simulation and field tests for different drivers:</p>
@@ -74,7 +61,20 @@
             </section>
 
             <section class="project-section" data-aos="fade-up">
-                <h2>System Architecture</h2>
+                <h2>Introduction</h2>
+                <div class="project-hero" data-aos="fade-up"></div>
+                <img src="../../../images/DriverDT1.png" alt="Driver Digital Twin System" class="hero-image">
+                </div>                
+                <p>Connected and automated vehicles (CAVs) are supposed to share the road with human-driven vehicles (HDVs) in a foreseeable future. Therefore, considering the mixed traffic environment is more pragmatic, as the well-planned operation of CAVs may be interrupted by HDVs. In the circumstance that human behaviors have significant impacts, CAVs need to understand HDV behaviors to make safe actions.</p>
+                
+                <p>In this study, we develop a Driver Digital Twin (DDT) for the online prediction of personalized lane change behavior, allowing CAVs to predict surrounding vehicles' behaviors with the help of the digital twin technology. DDT is deployed on a vehicle-edge-cloud architecture, where the cloud server models the driver behavior for each HDV based on the historical naturalistic driving data, while the edge server processes the real-time data from each driver with his/her digital twin on the cloud to predict the personalized lane change maneuver.</p>
+                
+                <p>The proposed system is first evaluated on a human-in-the-loop co-simulation platform, and then in a field implementation with three passenger vehicles driving along an on/off ramp segment connecting to the edge server and cloud through the 4G/LTE cellular network. The lane change intention can be recognized in 6 seconds on average before the vehicle crosses the lane separation line, and the Mean Euclidean Distance between the predicted trajectory and GPS ground truth is 1.03 meters within a 4-second prediction window. Compared to the general model, using a personalized model can improve prediction accuracy by 27.8%.</p>
+            </section>
+
+
+            <section class="project-section" data-aos="fade-up">
+                <h2>Personalized Prediction Workflow</h2>
                 <div class="image-gallery">
                     <img src="../../../images/DriverDT2.png" alt="Driver Digital Twin Architecture" class="gallery-image">
                 </div>
