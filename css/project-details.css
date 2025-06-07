@@ -1,7 +1,45 @@
-.project-detail {
-    padding: 2rem 0;
-    max-width: 900px;
+.project-detail-container {
+    padding: var(--container-padding);
+    max-width: var(--container-width);
     margin: 0 auto;
+    width: 100%;
+    padding-top: 80px; /* Add padding for fixed navbar */
+}
+
+.project-header {
+    text-align: center;
+    margin: 6rem 0 4rem;
+    padding-top: 0;
+}
+
+.project-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    color: #333;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.project-content {
+    margin-top: 2rem;
+}
+
+.project-section {
+    margin: 4rem 0;
+}
+
+.project-detail {
+    padding: var(--container-padding);
+    max-width: var(--container-width);
+    margin: 0 auto;
+    width: 100%;
 }
 
 .project-detail h1 {
@@ -275,21 +313,14 @@ figure figcaption {
     }
 }
 
-.project-header {
-    margin: 4rem 0 3rem;  /* Increased top margin from default */
+/* For project pages that use h1 directly */
+.project-title {
     text-align: center;
-}
-
-.project-header h1 {
+    margin: 6rem 0 4rem;
+    padding-top: 80px;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.project-meta {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    color: #666;
+    color: var(--primary-color);
+    line-height: 1.3;
 }
 
 /* For larger screens, add even more space */
@@ -378,5 +409,26 @@ figure figcaption {
     
     .single-figure figure {
         width: 100%;
+    }
+    
+    .project-header {
+        margin: 4rem 0 3rem;
+        padding-top: 60px;
+    }
+    
+    .project-title {
+        margin: 4rem 0 3rem;
+        padding-top: 60px;
+        font-size: 2rem;
+    }
+    
+    .project-header h1 {
+        font-size: 2rem;
+    }
+    
+    .project-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
     }
 }

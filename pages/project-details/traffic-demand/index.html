@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traffic Demand Analysis - DeepAct Visualization</title>
     <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/project-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         .page-container {
             max-width: 1200px;
@@ -185,79 +190,104 @@
 </head>
 
 <body>
-    <div class="page-container">
-        <a href="../../projects.html" class="back-link">← Back to Projects</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1><a href="../../../index.html">Xishun Liao</a></h1>
+            <div class="nav-links">
+                <a href="../../../index.html#about">About</a>
+                <a href="../../../index.html#research">Research</a>
+                <a href="../../publications.html">Publications</a>
+                <a href="../../projects.html">Projects</a>
+            </div>
+        </div>
+    </nav>
 
-        <div class="project-header">
-            <h1>Next Generation Traffic Demand Model: Deep Learning for Human Mobility Synthesis</h1>
+    <main class="container project-detail-container">
+        <div class="project-header" data-aos="fade-down">
+            <h1>Traveler Digital Twin: Next Generation Traffic Demand Model</h1>
+            <div class="project-meta">
+                <span class="project-date">2023 - Present</span>
+                <span class="project-location">UCLA</span>
+            </div>
         </div>
 
-        <div class="project-description">
-            <p>This research is conducted under the <a href="https://www.iarpa.gov/research-programs/haystac">Hidden Activity Signal and Trajectory Anomaly Characterization (HAYSTAC)</a> project, funded by The Intelligence Advanced Research Projects Activity (IARPA) at the Office of the Director of National Intelligence. HAYSTAC aims to establish models of "normal" human movement across times, locations, and people in order to characterize what makes an activity detectable as anomalous within the expanding corpus of global human trajectory data.</p>    
-            <p> We propose a deep learning model to generate synthetic human mobility data based on socio-demographic information and household characteristics. The model is transferable and can be fine-tuned with local data, making it suitable for data-limited regions. By leveraging HTS data, an effective loss function, and optimizing input construction, even a vanilla transformer model proves highly effective in addressing this complex problem. Additionally, we integrate mobility generation with activity location assignment, validating the model's performance by embedding generative travel demand into a large-scale simulation network.The model can be fine-tuned with local open-source data, allowing it to adapt to and accurately represent mobility patterns across diverse regions.</p>
-        </div>
+        <div class="project-content" data-aos="fade-up">
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>This research is conducted under the <a href="https://www.iarpa.gov/research-programs/haystac">Hidden Activity Signal and Trajectory Anomaly Characterization (HAYSTAC)</a> project, funded by The Intelligence Advanced Research Projects Activity (IARPA) at the Office of the Director of National Intelligence. HAYSTAC aims to establish models of "normal" human movement across times, locations, and people in order to characterize what makes an activity detectable as anomalous within the expanding corpus of global human trajectory data.</p>    
+                <p> We propose a deep learning model to generate synthetic human mobility data based on socio-demographic information and household characteristics. The model is transferable and can be fine-tuned with local data, making it suitable for data-limited regions. By leveraging HTS data, an effective loss function, and optimizing input construction, even a vanilla transformer model proves highly effective in addressing this complex problem. Additionally, we integrate mobility generation with activity location assignment, validating the model's performance by embedding generative travel demand into a large-scale simulation network.The model can be fine-tuned with local open-source data, allowing it to adapt to and accurately represent mobility patterns across diverse regions.</p>
+            </section>
 
-        <div class="image-section">
-            <div class="image-container">
-                <img src="workflow.png" alt="DeepAct Model Workflow">
-                <div class="image-caption">
-                    Figure 1: The DeepAct Model Workflow
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="workflow.png" alt="DeepAct Model Workflow">
+                    <div class="image-caption">
+                        Figure 1: The DeepAct Model Workflow
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="visualization-section">
-            <div class="visualization-description">
-                <h2>Interactive Visualization: DeepAct Model</h2>
-                <p>This visualization (adapted from <a href="https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/">Flowing Data</a>) demonstrates human activity patterns over time using the DeepAct model. Each dot represents an individual, and colors indicate different activities. The visualization runs through a 24-hour cycle showing how people move between different activities throughout the day. Given the synthetic socio-demographic information and household characteristics of each agent, our model can synthesize their complete activity chain and the location of each activity.</p>
-            </div>
+            <div class="visualization-section">
+                <div class="visualization-description">
+                    <h2>Interactive Visualization: DeepAct Model</h2>
+                    <p>This visualization (adapted from <a href="https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/">Flowing Data</a>) demonstrates human activity patterns over time using the DeepAct model. Each dot represents an individual, and colors indicate different activities. The visualization runs through a 24-hour cycle showing how people move between different activities throughout the day. Given the synthetic socio-demographic information and household characteristics of each agent, our model can synthesize their complete activity chain and the location of each activity.</p>
+                </div>
 
-            <div class="visualization-container">
-                <div id="main-wrapper">
-                    <div id="sidebar">
-                        <div class="controls-container">
-                            <div id="current_time">06:10</div>
-                            <div id="note">2023-01-01, Thursday</div>
-                            <div id="speed">
-                                <div class="togglebutton medium" data-val="medium">Medium</div>
-                                <div class="togglebutton fast current" data-val="fast">Fast</div>
+                <div class="visualization-container">
+                    <div id="main-wrapper">
+                        <div id="sidebar">
+                            <div class="controls-container">
+                                <div id="current_time">06:10</div>
+                                <div id="note">2023-01-01, Thursday</div>
+                                <div id="speed">
+                                    <div class="togglebutton medium" data-val="medium">Medium</div>
+                                    <div class="togglebutton fast current" data-val="fast">Fast</div>
+                                </div>
+                            </div>
+
+                            <div class="color-controls">
+                                <b>Color by:</b>
+                                <select id="ColorOptions" onchange="link_color_changed(this.value)">
+                                    <option value="STATE" selected="selected">State</option>
+                                    <option value="NODE">Sample ID</option>
+                                </select>
                             </div>
                         </div>
 
-                        <div class="color-controls">
-                            <b>Color by:</b>
-                            <select id="ColorOptions" onchange="link_color_changed(this.value)">
-                                <option value="STATE" selected="selected">State</option>
-                                <option value="NODE">Sample ID</option>
-                            </select>
-                        </div>
+                        <div id="chart"></div>
+                        <div class="clr"></div>
                     </div>
-
-                    <div id="chart"></div>
-                    <div class="clr"></div>
                 </div>
             </div>
-        </div>
 
-        <div class="image-section">
-            <div class="image-container">
-                <video width="100%" controls>
-                    <source src="../../../videos/LAsim.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="image-caption">
-                    The framework builds on the Multi-Agent Transport Simulation (MATSim) to tackle the challenges induced by urbanization and changing mobility patterns. By loading the synthesized travel demand into the LA roadway network, we can generate the synthetic traffic flow and further evaluate the transportation system performance based on the generated human mobility patterns.
+            <div class="image-section">
+                <div class="image-container">
+                    <video width="100%" controls>
+                        <source src="../../../videos/LAsim.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="image-caption">
+                        The framework builds on the Multi-Agent Transport Simulation (MATSim) to tackle the challenges induced by urbanization and changing mobility patterns. By loading the synthesized travel demand into the LA roadway network, we can generate the synthetic traffic flow and further evaluate the transportation system performance based on the generated human mobility patterns.
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="methodology-section">
-            <h2>Model Evaluation and Impact</h2>
-            <p>The model is evaluated on a nationwide dataset of the United States, where it demonstrates superior performance in generating activity-location chains that closely follow ground truth distributions. Further tests using state- or city-specific datasets from California, Washington, and Mexico City confirm its transferability.</p>
-            <p>This innovative approach offers substantial potential to advance mobility modeling research, particularly in generating synthetic human mobility data. This can provide urban planners and policymakers with enhanced tools for simulating mobility in diverse regions and better informing decisions related to transportation, urban development, and public health.</p>
+            <div class="methodology-section">
+                <h2>Model Evaluation and Impact</h2>
+                <p>The model is evaluated on a nationwide dataset of the United States, where it demonstrates superior performance in generating activity-location chains that closely follow ground truth distributions. Further tests using state- or city-specific datasets from California, Washington, and Mexico City confirm its transferability.</p>
+                <p>This innovative approach offers substantial potential to advance mobility modeling research, particularly in generating synthetic human mobility data. This can provide urban planners and policymakers with enhanced tools for simulating mobility in diverse regions and better informing decisions related to transportation, urban development, and public health.</p>
+            </div>
         </div>
-    </div>
+    </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="../../../js/main.js"></script>
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script>
         // Initial settings

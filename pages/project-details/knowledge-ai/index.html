@@ -73,51 +73,59 @@
     </nav>
 
     <main class="container project-detail-container">
-        <h1 class="project-title" data-aos="fade-down">Knowledge-based AI Application in Transportation</h1>
+        <div class="project-header" data-aos="fade-down">
+            <h1>Knowledge-based AI Application in Transportation</h1>
+            <div class="project-meta">
+                <span class="project-date">2023 - Present</span>
+                <span class="project-location">UCR</span>
+            </div>
+        </div>
         
-        <section class="project-overview" data-aos="fade-up">
-            <h2>Project Overview</h2>
-            <p>Human travel trajectory mining is crucial for transportation systems, enhancing route optimization, traffic management, and the study of human travel patterns. While previous studies have primarily focused on spatial-temporal information, the integration of semantic data has been limited. We introduce a novel pipeline for human travel trajectory mining, annotating GPS trajectories with POIs and visit purpose.</p>
-        </section>
+        <div class="project-content" data-aos="fade-up">
+            <section class="project-overview">
+                <h2>Project Overview</h2>
+                <p>Human travel trajectory mining is crucial for transportation systems, enhancing route optimization, traffic management, and the study of human travel patterns. While previous studies have primarily focused on spatial-temporal information, the integration of semantic data has been limited. We introduce a novel pipeline for human travel trajectory mining, annotating GPS trajectories with POIs and visit purpose.</p>
+            </section>
 
-        <section class="project-gallery" data-aos="fade-up">
-            <figure>
-                <img src="flow_diagram_new.png" alt="System Flow Diagram">
-                <figcaption>First application of LLM to POI classification with semantic information inference</figcaption>
-            </figure>
-        </section>
+            <section class="project-gallery" data-aos="fade-up">
+                <figure>
+                    <img src="flow_diagram_new.png" alt="System Flow Diagram">
+                    <figcaption>First application of LLM to POI classification with semantic information inference</figcaption>
+                </figure>
+            </section>
 
-        <section class="key-contributions" data-aos="fade-up">
-            <h2>Key Contributions</h2>
-            <ul>
-                <li>A novel data mining framework integrating LLM-based POI classification with probabilistic activity inference algorithm, bridging spatial-temporal and natural language analyses in trajectory mining.</li>
-                <li>Framework adaptability across various regional POI datasets without additional training, effectively handling incomplete data.</li>
-                <li>First application of LLM to POI classification, achieving precise point-level inference through semantic information.</li>
-            </ul>
-        </section>
-
-        <section class="results" data-aos="fade-up">
-            <h2>Results</h2>
-            <div class="results-highlight">
+            <section class="key-contributions" data-aos="fade-up">
+                <h2>Key Contributions</h2>
                 <ul>
-                    <li>93.4% accuracy and 96.1% F-1 score in POI classification</li>
-                    <li>91.7% accuracy with 92.3% F-1 score in activity inference</li>
+                    <li>A novel data mining framework integrating LLM-based POI classification with probabilistic activity inference algorithm, bridging spatial-temporal and natural language analyses in trajectory mining.</li>
+                    <li>Framework adaptability across various regional POI datasets without additional training, effectively handling incomplete data.</li>
+                    <li>First application of LLM to POI classification, achieving precise point-level inference through semantic information.</li>
                 </ul>
-            </div>
-        </section>
+            </section>
 
-        <section class="project-gallery" data-aos="fade-up">
-            <div class="gallery-grid">
-                <figure>
-                    <img src="poi_example_la_egypt.png" alt="POI Analysis">
-                    <figcaption>Framework adaptability demonstration across different regional POI datasets. Example of POIs and classification results from (a) LA county and (b) Egypt.</figcaption>
-                </figure>
-                <figure>
-                    <img src="TrajectoryXL.png" alt="Trajectory Analysis">
-                    <figcaption>Examples of semantic trajectories post-data mining: (a) Activity-annotated stay points in LA. (b) Activity timelines.</figcaption>
-                </figure>
-            </div>
-        </section>
+            <section class="results" data-aos="fade-up">
+                <h2>Results</h2>
+                <div class="results-highlight">
+                    <ul>
+                        <li>93.4% accuracy and 96.1% F-1 score in POI classification</li>
+                        <li>91.7% accuracy with 92.3% F-1 score in activity inference</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="project-gallery" data-aos="fade-up">
+                <div class="gallery-grid">
+                    <figure>
+                        <img src="poi_example_la_egypt.png" alt="POI Analysis">
+                        <figcaption>Framework adaptability demonstration across different regional POI datasets. Example of POIs and classification results from (a) LA county and (b) Egypt.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="TrajectoryXL.png" alt="Trajectory Analysis">
+                        <figcaption>Examples of semantic trajectories post-data mining: (a) Activity-annotated stay points in LA. (b) Activity timelines.</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
