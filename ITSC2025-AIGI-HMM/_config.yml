@@ -1,0 +1,40 @@
+title: ITSC2025 Workshop - AI & Geospatial Intelligence in Human Mobility Modeling
+description: Workshop on Integrating Artificial Intelligence and Geospatial Intelligence Innovative Methods and Applications in Human Mobility Modeling at IEEE ITSC 2025
+baseurl: "/ITSC2025-AIGI-HMM"
+url: "https://xishunliao.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  speakers:
+    output: true
+    permalink: /speakers/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "speakers"
+    values:
+      layout: "speaker"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
+  - requirements.md
+
+# Theme settings
+theme_color: "#003366"  # IEEE blue
+accent_color: "#FFB81C"  # IEEE gold 
