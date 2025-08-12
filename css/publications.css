@@ -3,6 +3,7 @@
     max-width: var(--container-width);
     margin: 0 auto;
     width: 100%;
+    padding-top: 120px; /* ensure title clears fixed navbar */
 }
 
 .publication-section {
