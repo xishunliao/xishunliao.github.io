@@ -7,15 +7,23 @@
     <title>Projects - Xishun Liao</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="canonical" href="https://xishunliao.github.io/pages/projects.html">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="../" class="nav-logo">Welcome to Heeson's Webpage</a>
-            <div class="nav-links">
+            <a href="../" class="nav-logo">Welcome to Xishun's Webpage</a>
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Toggle menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="primary-menu">
                 <a href="../index.html#about">About</a>
                 <a href="../index.html#research">Research</a>
                 <a href="publications.html">Publications</a>
@@ -24,17 +32,17 @@
         </div>
     </nav>
     
-    <main class="container projects-container">
+    <main class="container projects-container" id="main-content">
         <h1 class="page-title" data-aos="fade-down">Research Projects</h1>
         
         <div class="projects-grid">
             <article class="project-card" data-aos="fade-up">
                 <div class="project-image">
-                    <img src="../images/DriverDT1.png" alt="Driver Digital Twin">
+                    <img src="../images/DriverDT1.png" alt="Driver Digital Twin" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Driver Digital Twin</h3>
-                    <p>Development of a comprehensive digital twin framework for drivers, integrating real-time driving data, surrounding environment, and AI-driven prediction based onpersonalized driving style .</p>
+                    <p>Development of a comprehensive digital twin framework for drivers, integrating real-time driving data, surrounding environment, and AI-driven prediction based on personalized driving style.</p>
                     <div class="project-details">
                         <span class="project-date">2019 - 2023</span>
                         <span class="project-location">UCR</span>
@@ -45,11 +53,11 @@
 
             <article class="project-card" data-aos="fade-up">
                 <div class="project-image">
-                    <img src="../images/Simulation_Matsim.png" alt="Traffic Demand Model">
+                    <img src="../images/Simulation_Matsim.png" alt="Travel Demand Model" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
-                    <h3>Traveler Digital Twin: Next Generation Traffic Demand Model</h3>
-                    <p>Development of an advanced traffic demand modeling system using deep learning to synthesize human mobility patterns in urban environments.</p>
+                    <h3>Traveler Digital Twin: Next Generation Travel Demand Model</h3>
+                    <p>Development of an advanced travel demand modeling system using deep learning to synthesize human mobility patterns in urban environments.</p>
                     <div class="project-details">
                         <span class="project-date">2023 - Present</span>
                         <span class="project-location">UCLA</span>
@@ -60,7 +68,7 @@
 
             <article class="project-card" data-aos="fade-up">
                 <div class="project-image">
-                    <img src="../images/MHuiL.png" alt="Multiplayer Simulation">
+                    <img src="../images/MHuiL.png" alt="Multiplayer Simulation" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Multiplayer Human-in-the-Loop Simulation Platform</h3>
@@ -75,7 +83,7 @@
 
             <article class="project-card" data-aos="fade-up">
                 <div class="project-image">
-                    <img src="../images/VehicleDT1.png" alt="Vehicle Digital Twin">
+                    <img src="../images/VehicleDT1.png" alt="Vehicle Digital Twin" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Vehicle Digital Twin</h3>
@@ -90,7 +98,7 @@
 
             <article class="project-card" data-aos="fade-up">
                 <div class="project-image">
-                    <img src="./project-details/ai-network/workzonemap.png" alt="AI Network">
+                    <img src="./project-details/ai-network/workzonemap.png" alt="AI Network" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Traffic Network Digital Twin</h3>
@@ -105,7 +113,7 @@
 
             <article class="project-card" data-aos="fade-up">
                 <div class="project-image">
-                    <img src="../images/LLMVLM.png" alt="Knowledge-based AI">
+                    <img src="../images/LLMVLM.png" alt="Knowledge-based AI" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Knowledge-based AI Application in Transportation</h3>
@@ -120,7 +128,7 @@
 
             <article class="project-card" data-aos="fade-up">
                 <div class="project-image">
-                    <img src="../images/MPD.png" alt="Driver Profile">
+                    <img src="../images/MPD.png" alt="Driver Profile" loading="lazy" decoding="async">
                 </div>
                 <div class="project-content">
                     <h3>Driver Profile: Personality, Mood, and Driving Style</h3>

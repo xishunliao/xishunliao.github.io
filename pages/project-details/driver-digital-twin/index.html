@@ -7,28 +7,27 @@
     <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="../../../css/project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="canonical" href="https://xishunliao.github.io/pages/project-details/driver-digital-twin/index.html">
     <style>
-        .hero-image {
-            max-width: 800px; /* Adjust this value as needed */
-            margin: 0 auto;
-            display: block;
-        }
-        
-        .gallery-image {
-            max-width: 800px; /* Adjust this value as needed */
-            margin: 0 auto;
-            display: block;
-        }
+        .hero-image { max-width: 800px; margin: 0 auto; display: block; }
+        .gallery-image { max-width: 800px; margin: 0 auto; display: block; }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <nav class="navbar">
         <div class="nav-container">
-            <h1><a href="../../../index.html">Xishun Liao</a></h1>
-            <div class="nav-links">
+            <a href="../../../index.html" class="nav-logo">Xishun Liao</a>
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Toggle menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="primary-menu">
                 <a href="../../../index.html#about">About</a>
                 <a href="../../../index.html#research">Research</a>
                 <a href="../../publications.html">Publications</a>
@@ -37,7 +36,7 @@
         </div>
     </nav>
 
-    <main class="container project-detail-container">
+    <main class="container project-detail-container" id="main-content">
         <div class="project-header" data-aos="fade-down">
             <h1>Cyber-Physical Mobility System: Driver Digital Twin</h1>
             <div class="project-meta">
@@ -66,8 +65,7 @@
             <section class="project-section" data-aos="fade-up">
                 <h2>Introduction</h2>
                 <div class="project-hero" data-aos="fade-up"></div>
-                <img src="../../../images/DriverDT1.png" alt="Driver Digital Twin System" class="hero-image">
-                </div>                
+                <img src="../../../images/DriverDT1.png" alt="Driver Digital Twin System" class="hero-image" loading="lazy" decoding="async">
                 <p>Connected and automated vehicles (CAVs) are supposed to share the road with human-driven vehicles (HDVs) in a foreseeable future. Therefore, considering the mixed traffic environment is more pragmatic, as the well-planned operation of CAVs may be interrupted by HDVs. In the circumstance that human behaviors have significant impacts, CAVs need to understand HDV behaviors to make safe actions.</p>
                 
                 <p>In this study, we develop a Driver Digital Twin (DDT) for the online prediction of personalized lane change behavior, allowing CAVs to predict surrounding vehicles' behaviors with the help of the digital twin technology. DDT is deployed on a vehicle-edge-cloud architecture, where the cloud server models the driver behavior for each HDV based on the historical naturalistic driving data, while the edge server processes the real-time data from each driver with his/her digital twin on the cloud to predict the personalized lane change maneuver.</p>
@@ -75,13 +73,16 @@
                 <p>The proposed system is first evaluated on a human-in-the-loop co-simulation platform, and then in a field implementation with three passenger vehicles driving along an on/off ramp segment connecting to the edge server and cloud through the 4G/LTE cellular network. The lane change intention can be recognized in 6 seconds on average before the vehicle crosses the lane separation line, and the Mean Euclidean Distance between the predicted trajectory and GPS ground truth is 1.03 meters within a 4-second prediction window. Compared to the general model, using a personalized model can improve prediction accuracy by 27.8%.</p>
             </section>
 
-
             <section class="project-section" data-aos="fade-up">
                 <h2>Personalized Prediction Workflow</h2>
                 <div class="image-gallery">
-                    <img src="../../../images/DriverDT2.png" alt="Driver Digital Twin Architecture" class="gallery-image">
+                    <img src="../../../images/DriverDT2.png" alt="Driver Digital Twin Architecture" class="gallery-image" loading="lazy" decoding="async">
                 </div>
             </section>
+        </div>
+
+        <div class="back-to-projects" data-aos="fade-up">
+            <a href="../../projects.html">← Back to Projects</a>
         </div>
     </main>
 

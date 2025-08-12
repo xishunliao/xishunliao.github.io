@@ -6,86 +6,35 @@
     <title>Cyber-Physical Mobility System: AI Network - Xishun Liao</title>
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="../../../css/project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="canonical" href="https://xishunliao.github.io/pages/project-details/ai-network/index.html">
     <style>
-        .image-pair {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .image-pair img {
-            max-width: 45%;  /* Reduced from default 100% */
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .image-caption {
-            text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .image-grid-custom {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .left-column {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        .right-column {
-            flex: 1;
-            display: flex;
-            align-items: center;
-        }
-        
-        .left-column img, .right-column img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .image-with-caption {
-            margin-bottom: 20px;
-        }
-        
-        .individual-caption {
-            text-align: center;
-            color: #666;
-            margin-top: 8px;
-            font-size: 0.9em;
-            font-style: italic;
-        }
-        
-        .left-column .image-with-caption:last-child {
-            margin-bottom: 0;
-        }
-
-        .project-title {
-            margin: 4rem 0 4rem 0;  /* Increased from default margins */
-            padding: 2rem 0;        /* Added padding */
-            text-align: center;
-            font-size: 2.2rem;      /* Slightly larger font size */
-            color: #333;
-            border-bottom: 1px solid #eee;
-        }
+        .image-pair { display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; }
+        .image-pair img { max-width: 45%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .image-caption { text-align: center; color: #666; margin-bottom: 30px; }
+        .image-grid-custom { display: flex; gap: 20px; margin-bottom: 20px; }
+        .left-column { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+        .right-column { flex: 1; display: flex; align-items: center; }
+        .left-column img, .right-column img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .image-with-caption { margin-bottom: 20px; }
+        .individual-caption { text-align: center; color: #666; margin-top: 8px; font-size: 0.9em; font-style: italic; }
+        .left-column .image-with-caption:last-child { margin-bottom: 0; }
+        .project-title { margin: 4rem 0 4rem 0; padding: 2rem 0; text-align: center; font-size: 2.2rem; color: #333; border-bottom: 1px solid #eee; }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <nav class="navbar">
         <div class="nav-container">
-            <h1><a href="../../../index.html">Xishun Liao</a></h1>
-            <div class="nav-links">
+            <a href="../../../index.html" class="nav-logo">Xishun Liao</a>
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Toggle menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="primary-menu">
                 <a href="../../../index.html#about">About</a>
                 <a href="../../../index.html#research">Research</a>
                 <a href="../../publications.html">Publications</a>
@@ -94,7 +43,7 @@
         </div>
     </nav>
 
-    <main class="container project-detail-container">
+    <main class="container project-detail-container" id="main-content">
         <div class="project-header" data-aos="fade-down">
             <h1>Cyber-Physical Mobility System: AI Network</h1>
             <div class="project-meta">
@@ -120,21 +69,21 @@
                 <div class="image-grid-custom">
                     <div class="left-column">
                         <div class="image-with-caption">
-                            <img src="workzonemap.png" alt="Work Zone Map Analysis">
+                            <img src="workzonemap.png" alt="Work Zone Map Analysis" loading="lazy" decoding="async">
                             <p class="individual-caption">Work zone impact visualization showing traffic flow changes and affected areas</p>
                         </div>
                         <div class="image-with-caption">
-                            <img src="Accident.png" alt="Accident Analysis">
+                            <img src="Accident.png" alt="Accident Analysis" loading="lazy" decoding="async">
                             <p class="individual-caption">Real-time accident detection and impact analysis dashboard</p>
                         </div>
                         <div class="image-with-caption">
-                            <img src="Accident2.png" alt="Accident Prediction">
+                            <img src="Accident2.png" alt="Accident Prediction" loading="lazy" decoding="async">
                             <p class="individual-caption">AI-powered accident prediction and risk assessment interface</p>
                         </div>
                     </div>
                     <div class="right-column">
                         <div class="image-with-caption">
-                            <img src="WorkzoneNet.png" alt="Work Zone Network">
+                            <img src="WorkzoneNet.png" alt="Work Zone Network" loading="lazy" decoding="async">
                             <p class="individual-caption">Neural network architecture for work zone impact prediction</p>
                         </div>
                     </div>

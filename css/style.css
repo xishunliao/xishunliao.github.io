@@ -57,6 +57,51 @@ body {
     color: var(--secondary-color);
 }
 
+/* Active nav link */
+.nav-links a.active {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    left: 8px;
+    top: -40px;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    z-index: 2000;
+    transition: top 0.2s ease;
+}
+.skip-link:focus {
+    top: 8px;
+}
+
+/* Screen-reader only utility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 .hero {
     padding-top: 60px;
     margin-top: 20px;
@@ -122,8 +167,26 @@ body {
         --container-padding: 1rem;
     }
     
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
     .nav-links {
         display: none;
+        position: absolute;
+        top: 56px;
+        right: 12px;
+        left: 12px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        padding: 0.5rem 0.75rem;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
     
     .grid {

@@ -7,63 +7,32 @@
     <title>Knowledge-based AI Application - Xishun Liao</title>
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="../../../css/project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="canonical" href="https://xishunliao.github.io/pages/project-details/knowledge-ai/index.html">
     <style>
-        .project-title {
-            margin-top: 4rem;
-            margin-bottom: 3rem;
-        }
-
-        .project-gallery figure {
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .project-gallery img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .gallery-grid figure img {
-            max-width: 80%;
-            height: auto;
-        }
-
-        figcaption {
-            margin-top: 1rem;
-            color: #666;
-            font-size: 0.95em;
-            padding: 0 10%;
-        }
-
-        @media (max-width: 768px) {
-            .project-gallery img,
-            .gallery-grid figure img {
-                max-width: 100%;
-            }
-            
-            figcaption {
-                padding: 0 5%;
-            }
-        }
+        .project-title { margin-top: 4rem; margin-bottom: 3rem; }
+        .project-gallery figure { margin: 2rem 0; text-align: center; }
+        .project-gallery img { max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .gallery-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin: 2rem 0; }
+        .gallery-grid figure img { max-width: 80%; height: auto; }
+        figcaption { margin-top: 1rem; color: #666; font-size: 0.95em; padding: 0 10%; }
+        @media (max-width: 768px) { .project-gallery img, .gallery-grid figure img { max-width: 100%; } figcaption { padding: 0 5%; } }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <nav class="navbar">
         <div class="nav-container">
-            <h1><a href="../../../index.html">Xishun Liao</a></h1>
-            <div class="nav-links">
+            <a href="../../../index.html" class="nav-logo">Xishun Liao</a>
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Toggle menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="primary-menu">
                 <a href="../../../index.html#about">About</a>
                 <a href="../../../index.html#research">Research</a>
                 <a href="../../publications.html">Publications</a>
@@ -72,7 +41,7 @@
         </div>
     </nav>
 
-    <main class="container project-detail-container">
+    <main class="container project-detail-container" id="main-content">
         <div class="project-header" data-aos="fade-down">
             <h1>Knowledge-based AI Application in Transportation</h1>
             <div class="project-meta">
@@ -89,7 +58,7 @@
 
             <section class="project-gallery" data-aos="fade-up">
                 <figure>
-                    <img src="flow_diagram_new.png" alt="System Flow Diagram">
+                    <img src="flow_diagram_new.png" alt="System Flow Diagram" loading="lazy" decoding="async">
                     <figcaption>First application of LLM to POI classification with semantic information inference</figcaption>
                 </figure>
             </section>
@@ -116,15 +85,19 @@
             <section class="project-gallery" data-aos="fade-up">
                 <div class="gallery-grid">
                     <figure>
-                        <img src="poi_example_la_egypt.png" alt="POI Analysis">
+                        <img src="poi_example_la_egypt.png" alt="POI Analysis" loading="lazy" decoding="async">
                         <figcaption>Framework adaptability demonstration across different regional POI datasets. Example of POIs and classification results from (a) LA county and (b) Egypt.</figcaption>
                     </figure>
                     <figure>
-                        <img src="TrajectoryXL.png" alt="Trajectory Analysis">
+                        <img src="TrajectoryXL.png" alt="Trajectory Analysis" loading="lazy" decoding="async">
                         <figcaption>Examples of semantic trajectories post-data mining: (a) Activity-annotated stay points in LA. (b) Activity timelines.</figcaption>
                     </figure>
                 </div>
             </section>
+        </div>
+
+        <div class="back-to-projects" data-aos="fade-up">
+            <a href="../../projects.html">← Back to Projects</a>
         </div>
     </main>
 
