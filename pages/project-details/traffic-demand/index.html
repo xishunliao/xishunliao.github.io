@@ -1,209 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Demand Analysis - DeepAct Visualization</title>
+    <title>Traveler Digital Twin: Travel Demand Modeling | Xishun Liao</title>
+    <meta name="description" content="Generative models of daily activities and locations, linked to large-scale traffic simulation.">
+    <link rel="icon" href="../../../favicon.ico">
+    <link rel="canonical" href="https://xishunliao.github.io/pages/project-details/traffic-demand/index.html">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="../../../css/project-details.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <style>
-        .page-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .visualization-container {
-            max-width: 1090px;
-            max-height: 450px; 
-            margin: 0 auto;
-            padding: 0;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            width: fit-content;
-            position: relative;
-        }
-
-        .project-header {
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-
-        .project-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        .project-description {
-            max-width: 1090px;
-            margin: 0 auto 3rem;
-            line-height: 1.8;
-            color: #444;
-            font-size: 1.1rem;
-            text-align: justify;
-        }
-
-        .visualization-section {
-            background: #f8f9fa;
-            padding: 1rem 0;
-            margin: 1rem 0;
-            border-radius: 8px;
-        }
-
-        .visualization-description {
-            max-width: 1000px;
-            margin: 0 auto 2rem;
-            padding: 0 20px;
-            line-height: 1.6;
-            text-align: center;
-            color: #666;
-        }
-
-        .controls-container {
-            text-align: center;
-            width: fit-content;
-            margin: 10px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        #main-wrapper {
-            font-family: inconsolata, Monaco, lucida console, Consolas, courier new;
-            width: 100%;
-            margin: 0 auto;
-            transform: scale(0.55);
-            transform-origin: top center;
-        }
-
-        .controls {
-            display: inline-block;
-            padding: 5px 15px;
-            background: #fff;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        #speed {
-            font-family: inconsolata, Monaco, lucida console, Consolas, courier new;
-            font-size: 18px;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        #speed .togglebutton {
-            padding: 5px 15px;
-            text-align: center;
-            border: 1px solid #ccc;
-            cursor: pointer;
-            float: left;
-            width: 100px;
-            font-weight: bold;
-        }
-
-        #speed .togglebutton.current {
-            color: #fff;
-            background: #000;
-            border: 1px solid #000;
-        }
-
-        #current_time {
-            font-size: 1.6rem;
-            font-weight: bold;
-            color: #333;
-            margin: 0;
-            display: inline-block;
-        }
-
-        #chart {
-            transform: scale(0.9);
-            transform-origin: top center;
-            margin: -20px auto 0;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin: 1rem;
-            padding: 0.5rem 1rem;
-            color: #333;
-            text-decoration: none;
-            border: 1px solid #333;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .back-link:hover {
-            background: #333;
-            color: #fff;
-        }
-
-        .methodology-section {
-            margin: 3rem auto;
-            max-width: 1000px;
-            padding: 0 20px;
-        }
-
-        .methodology-section h2 {
-            color: #333;
-            margin-bottom: 1.5rem;
-        }
-
-        #note {
-            font-size: 1.2rem;
-            color: #333;
-            margin: 0;
-            display: inline-block;
-        }
-
-        .image-section {
-            margin: 3rem auto;
-            max-width: 900px;
-            padding: 0 20px;
-        }
-
-        .image-container {
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .image-caption {
-            margin-top: 1rem;
-            color: #666;
-            font-style: italic;
-            text-align: center;
-        }
-    </style>
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1><a href="../../../index.html">Xishun Liao</a></h1>
-            <div class="nav-links">
-                <a href="../../../index.html#about">About</a>
-                <a href="../../../index.html#research">Research</a>
-                <a href="../../publications.html">Publications</a>
-                <a href="../../projects.html">Projects</a>
-            </div>
-        </div>
-    </nav>
-
-    <main class="container project-detail-container">
-        <div class="project-header" data-aos="fade-down">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav class="navbar" aria-label="Main navigation"><div class="nav-container">
+<a class="nav-logo back-home" href="../../../index.html"><span aria-hidden="true">←</span> Back to home</a>
+<button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+<div class="nav-links" id="primary-menu"><a href="../../../index.html#about">About</a><a href="../../../index.html#news">News</a><a href="../../../index.html#research">Research</a><a href="../../../pages/publications.html">Publications</a></div></div></nav><main class="container project-detail-container" id="main-content">
+        <p class="breadcrumb"><a href="../../projects.html">Research projects</a></p><div class="project-header">
             <h1>Traveler Digital Twin: Next Generation Travel Demand Model</h1>
             <div class="project-meta">
                 <span class="project-date">2023 - Present</span>
@@ -211,16 +24,15 @@
             </div>
         </div>
 
-        <div class="project-content" data-aos="fade-up">
+        <div class="project-content">
             <section class="project-section">
                 <h2>Project Overview</h2>
-                <p>This research is conducted under the <a href="https://www.iarpa.gov/research-programs/haystac">Hidden Activity Signal and Trajectory Anomaly Characterization (HAYSTAC)</a> project, funded by The Intelligence Advanced Research Projects Activity (IARPA) at the Office of the Director of National Intelligence. HAYSTAC aims to establish models of "normal" human movement across times, locations, and people in order to characterize what makes an activity detectable as anomalous within the expanding corpus of global human trajectory data.</p>    
-                <p> We propose a deep learning model to generate synthetic human mobility data based on socio-demographic information and household characteristics. The model is transferable and can be fine-tuned with local data, making it suitable for data-limited regions. By leveraging HTS data, an effective loss function, and optimizing input construction, even a vanilla transformer model proves highly effective in addressing this complex problem. Additionally, we integrate mobility generation with activity location assignment, validating the model's performance by embedding generative travel demand into a large-scale simulation network.The model can be fine-tuned with local open-source data, allowing it to adapt to and accurately represent mobility patterns across diverse regions.</p>
+                <p>Developed under the <a href="https://www.iarpa.gov/research-programs/haystac" target="_blank" rel="noopener">HAYSTAC program</a>, this work generates daily activity and location sequences from demographic and household information.</p><p>The model can be fine-tuned with local data and combined with activity location assignment. Generated travel demand is then evaluated in large-scale traffic simulation.</p>
             </section>
 
             <div class="image-section">
                 <div class="image-container">
-                    <img src="workflow.png" alt="DeepAct Model Workflow">
+                    <img src="workflow.png" alt="DeepAct Model Workflow" loading="lazy" decoding="async">
                     <div class="image-caption">
                         Figure 1: The DeepAct Model Workflow
                     </div>
@@ -230,25 +42,24 @@
             <div class="visualization-section">
                 <div class="visualization-description">
                     <h2>Interactive Visualization: DeepAct Model</h2>
-                    <p>This visualization (adapted from <a href="https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/">Flowing Data</a>) demonstrates human activity patterns over time using the DeepAct model. Each dot represents an individual, and colors indicate different activities. The visualization runs through a 24-hour cycle showing how people move between different activities throughout the day. Given the synthetic socio-demographic information and household characteristics of each agent, our model can synthesize their complete activity chain and the location of each activity.</p>
-                </div>
+                    <p>Each dot represents a person moving between activities over time. Change the speed or color grouping to explore the generated activity patterns. Visualization adapted from <a href="https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/" target="_blank" rel="noopener">FlowingData</a>.</p></div>
 
                 <div class="visualization-container">
                     <div id="main-wrapper">
                         <div id="sidebar">
                             <div class="controls-container">
-                                <div id="current_time">06:10</div>
-                                <div id="note">2023-01-01, Thursday</div>
+                                <div id="current_time">00:00</div>
+                                <div id="note">Day 1</div>
                                 <div id="speed">
-                                    <div class="togglebutton medium" data-val="medium">Medium</div>
-                                    <div class="togglebutton fast current" data-val="fast">Fast</div>
+                                    <button class="togglebutton medium" data-val="medium" type="button">Medium</button>
+                                    <button class="togglebutton fast current" data-val="fast" type="button">Fast</button>
                                 </div>
                             </div>
 
                             <div class="color-controls">
-                                <b>Color by:</b>
+                                <label for="ColorOptions">Color by:</label>
                                 <select id="ColorOptions" onchange="link_color_changed(this.value)">
-                                    <option value="STATE" selected="selected">State</option>
+                                    <option value="STATE" selected>State</option>
                                     <option value="NODE">Sample ID</option>
                                 </select>
                             </div>
@@ -257,83 +68,37 @@
                         <div id="chart"></div>
                         <div class="clr"></div>
                     </div>
-                </div>
+                <noscript><p>The interactive visualization requires JavaScript. The workflow, results, and simulation video remain available below and above.</p></noscript></div>
             </div>
 
             <div class="image-section">
                 <div class="image-container">
-                    <video width="100%" controls>
+                    <video width="100%" controls preload="metadata">
                         <source src="../../../videos/LAsim.mp4" type="video/mp4">
                         Your browser does not support the video tag.
-                    </video>
-                    <div class="image-caption">
-                        The framework builds on the Multi-Agent Transport Simulation (MATSim) to tackle the challenges induced by urbanization and changing mobility patterns. By loading the synthesized travel demand into the LA roadway network, we can generate the synthetic traffic flow and further evaluate the transportation system performance based on the generated human mobility patterns.
-                    </div>
+                    </source></video>
+                    <div class="image-caption">Synthesized travel demand loaded into the Los Angeles road network using MATSim.</div>
                 </div>
             </div>
 
             <div class="methodology-section">
-                <h2>Model Evaluation and Impact</h2>
-                <p>The model is evaluated on a nationwide dataset of the United States, where it demonstrates superior performance in generating activity-location chains that closely follow ground truth distributions. Further tests using state- or city-specific datasets from California, Washington, and Mexico City confirm its transferability.</p>
-                <p>This innovative approach offers substantial potential to advance mobility modeling research, particularly in generating synthetic human mobility data. This can provide urban planners and policymakers with enhanced tools for simulating mobility in diverse regions and better informing decisions related to transportation, urban development, and public health.</p>
-            </div>
+                <h2>Model Evaluation</h2>
+                <p>Evaluation compares generated activity-location chains with observed distributions in nationwide and regional datasets, including California, Washington, and Mexico City.</p></div>
         </div>
-    </main>
+    <section class="related-publications"><h2>Related Publications</h2><ul><li><a href="../../publications.html#deep-activity">Deep Activity Model: A Generative Approach for Human Mobility Pattern Synthesis</a></li><li><a href="../../publications.html#household-generation">Next-Generation Travel Demand Modeling with a Generative Framework for Household Activity Coordination</a></li><li><a href="../../publications.html#mobility-foundation">Learning Universal Human Mobility Patterns with a Foundation Model for Cross-Domain Data Fusion</a></li></ul></section><p class="back-to-projects"><a href="../../projects.html">All research projects</a></p></main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
-    <script src="../../../js/main.js"></script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script>
-        // Initial settings
-        var USER_SPEED = "fast";
-        var speeds = {'medium': 100, 'fast': 5};
-        var curr_minute = 370;
-
-        // Override the timer function
-        window.onload = function() {
-            // Remove slow button and update UI
-            d3.select(".slow").remove();
-            d3.select(".medium").classed("current", false);
-            d3.select(".fast").classed("current", true);
-            d3.select("#current_time").text("06:10");
-
-            // Wait for DeepAct.js to initialize
-            setTimeout(function() {
-                // Force animation speed
-                USER_SPEED = "fast";
-                
-                // Clear any existing animation
-                if (typeof timer !== 'undefined' && timer._timer) {
-                    clearTimeout(timer._timer);
-                }
-                
-                // Force animation to restart
-                force.resume();
-                setTimeout(timer, 5);
-
-                // Update speed toggle handlers
-                d3.selectAll(".togglebutton")
-                    .on("click", function() {
-                        var val = d3.select(this).attr("data-val");
-                        d3.selectAll(".togglebutton").classed("current", false);
-                        d3.select("." + val).classed("current", true);
-                        USER_SPEED = val;
-                        
-                        // Restart animation with new speed
-                        if (typeof timer !== 'undefined' && timer._timer) {
-                            clearTimeout(timer._timer);
-                        }
-                        setTimeout(timer, speeds[val]);
-                    });
-            }, 1000);
-        };
-    </script>
-    <script src="DeepAct.js"></script>
+    <footer class="site-footer"><div class="container footer-content"><div><p>© 2026 Xishun Liao</p></div><p><a href="mailto:xishun.liao@ucf.edu">xishun.liao@ucf.edu</a></p></div></footer>
+<script src="../../../js/main.js" defer></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="DeepAct.js"></script>
+<script>
+    if (typeof d3 !== 'undefined') {
+        // Keep the existing animation's single timer; do not restart it on load.
+        USER_SPEED = 'fast';
+        svg.attr('viewBox', '0 0 780 780').attr('role', 'img')
+            .attr('aria-label', 'Animated distribution of generated human activities');
+        time_notes.forEach(function(note, i) { note.note = 'Day ' + (i + 1); });
+    }
+</script>
 </body>
-</html> 
+</html>

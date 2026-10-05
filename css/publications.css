@@ -1,99 +1,14 @@
-.publications-container {
-    padding: var(--container-padding);
-    max-width: var(--container-width);
-    margin: 0 auto;
-    width: 100%;
-    padding-top: 120px; /* ensure title clears fixed navbar */
-}
-
-.publication-section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.publication-section h2 {
-    color: #333;
-    border-bottom: 1px solid #e5e7eb;
-    padding-bottom: 0.35rem;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-}
-
-/* Single-column compact list */
-.publication-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-}
-
-.publication {
-    position: relative;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease;
-    padding: 0.75rem 2.75rem 0.75rem 0.75rem; /* extra right space for PDF link */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.publication:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-}
-
-/* Keep compact typography */
-.publication p { margin: 0.25rem 0; line-height: 1.35; font-size: 0.93rem; }
-.publication p:first-child { font-weight: 700; color: #111827; font-size: 1rem; }
-.authors { color: #4b5563; font-size: 0.9rem; }
-.venue { color: #6b7280; font-style: italic; font-size: 0.85rem; margin-top: 0.2rem; }
-
-.highlight {
-    font-weight: 700;
-    color: #1f2937;
-}
-
-.last-updated {
-    color: #666;
-    font-size: 0.85em;
-    margin: 0.25rem 0 1.25rem;
-    font-style: italic;
-}
-
-.pub-link {
-    position: absolute;
-    top: 0.6rem;
-    right: 0.6rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0.3rem 0.6rem;
-    background: #f3f4f6;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #1f2937;
-    transition: all 0.2s ease;
-    font-size: 0.82rem;
-}
-
-.pub-link i { color: #dc2626; }
-
-.pub-link:hover {
-    background: #e5e7eb;
-    color: #111827;
-}
-
-/* Remove multi-column responsive overrides */
-@media (max-width: 1200px) {
-    .publication-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 768px) {
-    .publication-grid { grid-template-columns: 1fr; }
-}
-
-.publications-container h1 + .publication-section {
-    margin-top: 3rem;
-}
+.publication-section { padding-block: 28px; border-top: 1px solid var(--border-color); }
+.publication-section h2 { font-size: 1.2rem; }
+.publication-grid { display: grid; grid-template-columns: minmax(0,1fr); gap: 24px; }
+.publication { min-width: 0; }
+.publication h3 { font-size: 1rem; line-height: 1.5; font-weight: 600; margin-bottom: 5px; }
+.publication p { margin: 3px 0; font-size: .86rem; line-height: 1.6; }
+.publication .authors { color: var(--muted-color); }
+.publication .venue { color: #495663; }
+.highlight { color: var(--text-color); font-weight: 600; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 6px; }
+.pub-link { font-size: .82rem; }
+.award { color: #795719; font-size: .83rem; }
+.publication-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: .88rem; padding-bottom: 24px; }
+.last-updated { color: var(--muted-color); font-size: .84rem; }

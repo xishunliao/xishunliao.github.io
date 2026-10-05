@@ -3,29 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
-    <title>Vehicle Digital Twin - Xishun Liao</title>
+    <title>Vehicle Digital Twin | Xishun Liao</title>
+    <meta name="description" content="Vehicle-to-cloud coordination for cooperative ramp merging, demonstrated with real vehicles.">
+    <link rel="icon" href="../../../favicon.ico">
+    <link rel="canonical" href="https://xishunliao.github.io/pages/project-details/vehicle-twin/index.html">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="../../../css/project-details.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1><a href="../../../index.html">Xishun Liao</a></h1>
-            <div class="nav-links">
-                <a href="../../../index.html#about">About</a>
-                <a href="../../../index.html#research">Research</a>
-                <a href="../../publications.html">Publications</a>
-                <a href="../../projects.html">Projects</a>
-            </div>
-        </div>
-    </nav>
-
-    <main class="container project-detail-container">
-        <div class="project-header" data-aos="fade-down">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav class="navbar" aria-label="Main navigation"><div class="nav-container">
+<a class="nav-logo back-home" href="../../../index.html"><span aria-hidden="true">←</span> Back to home</a>
+<button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+<div class="nav-links" id="primary-menu"><a href="../../../index.html#about">About</a><a href="../../../index.html#news">News</a><a href="../../../index.html#research">Research</a><a href="../../../pages/publications.html">Publications</a></div></div></nav><main class="container project-detail-container" id="main-content">
+        <p class="breadcrumb"><a href="../../projects.html">Research projects</a></p><div class="project-header">
             <h1>Cyber-Physical Mobility System: Vehicle Digital Twin</h1>
             <div class="project-meta">
                 <span class="project-date">2019 - 2023</span>
@@ -33,63 +24,28 @@
             </div>
         </div>
 
-        <div class="project-content" data-aos="fade-up">
-            <div class="project-image-container" data-aos="fade-up" style="max-width: 600px; margin: 0 auto;">
-                <img src="../../../images/VehicleDT1.png" alt="Vehicle Digital Twin System" class="project-main-image" style="width: 130%; display: block; margin: 0 auto;">
-                <p class="image-caption" style="text-align: center; margin-top: 1rem; font-style: italic; color: #666; font-size: 0.9rem;">
-                    As a realization of the "Digital Twin" concept, a flexible cloud-based CAV system framework has been developed and demonstrated. To the best of our knowledge, this is the first time to implement cooperative ramp merging in the field using the 4G/LTE communication and evaluate its effectiveness.
-                </p>
+        <div class="project-content">
+            <div class="project-image-container">
+                <img src="../../../images/VehicleDT1.png" alt="Vehicle Digital Twin System" class="project-main-image" loading="lazy" decoding="async">
+                <p class="image-caption">Vehicle-to-cloud architecture for cooperative ramp merging, demonstrated with three passenger vehicles.</p>
             </div>
 
             <section class="project-section">
                 <h2>Project Overview</h2>
-                <p>
-                    Ramp merging is considered as one of the most difficult driving scenarios due to the chaotic nature in both longitudinal and lateral driver behaviors (namely lack of effective coordination) in the merging area. In this study, we have designed a cooperative ramp merging system for connected vehicles, allowing merging vehicles to cooperate with others prior to arriving at the merging zone.
-                </p>
-                <p>
-                    Different from most of the existing studies that utilize dedicated short-range communication, we adopt a Digital Twin approach based on vehicle-to-cloud communication. On-board devices upload the data to the cloud server through the 4G/LTE cellular network. The server creates Digital Twins of vehicles and drivers whose parameters are synchronized in real time with their counterparts in the physical world, processes the data with the proposed models in the digital world, and sends advisory information back to the vehicles and drivers in the physical world.
-                </p>
-                <p>
-                    A real-world field implementation has been conducted in Riverside, California, with three passenger vehicles. The results show the proposed system addresses the issues of safety and environmental sustainability with an acceptable communication delay, compared to the baseline scenario where no advisory information is provided during the merging process.
-                </p>
-            </section>
+                <p>This cooperative ramp merging system uses vehicle-to-cloud communication to coordinate connected vehicles before they reach a merging zone. On-board devices send observations over a 4G/LTE network; cloud-based vehicle and driver models process the data and return driving advice.</p><p>The system was implemented with three passenger vehicles in Riverside, California. Field experiments compared operation with and without advisory information, including communication delay, safety, and environmental performance.</p></section>
 
-            <section class="project-section" data-aos="fade-up">
+            <section class="project-section">
                 <h2>Project Demo</h2>
-                <div class="video-container" style="max-width: 800px; margin: 0 auto;">
-                    <iframe 
-                        width="100%" 
-                        height="450" 
-                        src="https://www.youtube.com/embed/gaQ7gqEWbZo" 
-                        title="Vehicle Digital Twin Demo" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
+                <div class="video-container">
+                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/gaQ7gqEWbZo" title="Vehicle Digital Twin Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
                     </iframe>
                 </div>
             </section>
 
-            <section class="project-section" data-aos="fade-up">
-                <h2>Key Features</h2>
-                <ul>
-                    <li>Real-time vehicle-to-cloud communication system</li>
-                    <li>Digital Twin synchronization with physical vehicles</li>
-                    <li>Cooperative ramp merging system</li>
-                    <li>Field implementation and validation</li>
-                    <li>ADAS design for providing speed advisory information</li>
-                    <li>Enhanced safety and environmental sustainability</li>
-                </ul>
-            </section>
-        </div>
-    </main>
+            </div>
+    <section class="related-publications"><h2>Related Publications</h2><ul><li><a href="../../publications.html#cooperative-merging">Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication</a></li><li><a href="../../publications.html#publication-c1">A Digital Twin Paradigm: Vehicle-to-Cloud Based Advanced Driver Assistance Systems</a></li></ul></section><p class="back-to-projects"><a href="../../projects.html">All research projects</a></p></main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
-    <script src="../../../js/main.js"></script>
+    <footer class="site-footer"><div class="container footer-content"><div><p>© 2026 Xishun Liao</p></div><p><a href="mailto:xishun.liao@ucf.edu">xishun.liao@ucf.edu</a></p></div></footer>
+<script src="../../../js/main.js" defer></script>
 </body>
-</html> 
+</html>

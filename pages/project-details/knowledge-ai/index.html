@@ -3,76 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../../favicon.ico" type="image/x-icon">
-    <title>Knowledge-based AI Application - Xishun Liao</title>
+    <title>Semantic Trajectory Analysis | Xishun Liao</title>
+    <meta name="description" content="Language models and probabilistic inference for classifying places and identifying travel activities.">
+    <link rel="icon" href="../../../favicon.ico">
+    <link rel="canonical" href="https://xishunliao.github.io/pages/project-details/knowledge-ai/index.html">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="../../../css/project-details.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="canonical" href="https://xishunliao.github.io/pages/project-details/knowledge-ai/index.html">
-    <style>
-        .project-title { margin-top: 4rem; margin-bottom: 3rem; }
-        .project-gallery figure { margin: 2rem 0; text-align: center; }
-        .project-gallery img { max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .gallery-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin: 2rem 0; }
-        .gallery-grid figure img { max-width: 80%; height: auto; }
-        figcaption { margin-top: 1rem; color: #666; font-size: 0.95em; padding: 0 10%; }
-        @media (max-width: 768px) { .project-gallery img, .gallery-grid figure img { max-width: 100%; } figcaption { padding: 0 5%; } }
-    </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../../../index.html" class="nav-logo">Xishun Liao</a>
-            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-menu">
-                <span class="sr-only">Toggle menu</span>
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="nav-links" id="primary-menu">
-                <a href="../../../index.html#about">About</a>
-                <a href="../../../index.html#research">Research</a>
-                <a href="../../publications.html">Publications</a>
-                <a href="../../projects.html">Projects</a>
-            </div>
-        </div>
-    </nav>
-
-    <main class="container project-detail-container" id="main-content">
-        <div class="project-header" data-aos="fade-down">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav class="navbar" aria-label="Main navigation"><div class="nav-container">
+<a class="nav-logo back-home" href="../../../index.html"><span aria-hidden="true">←</span> Back to home</a>
+<button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+<div class="nav-links" id="primary-menu"><a href="../../../index.html#about">About</a><a href="../../../index.html#news">News</a><a href="../../../index.html#research">Research</a><a href="../../../pages/publications.html">Publications</a></div></div></nav><main class="container project-detail-container" id="main-content">
+        <p class="breadcrumb"><a href="../../projects.html">Research projects</a></p><div class="project-header">
             <h1>Knowledge-based AI Application in Transportation</h1>
             <div class="project-meta">
                 <span class="project-date">2023 - Present</span>
                 <span class="project-location">UCR</span>
             </div>
         </div>
-        
-        <div class="project-content" data-aos="fade-up">
+
+        <div class="project-content">
             <section class="project-overview">
                 <h2>Project Overview</h2>
-                <p>Human travel trajectory mining is crucial for transportation systems, enhancing route optimization, traffic management, and the study of human travel patterns. While previous studies have primarily focused on spatial-temporal information, the integration of semantic data has been limited. We introduce a novel pipeline for human travel trajectory mining, annotating GPS trajectories with POIs and visit purpose.</p>
-            </section>
+                <p>This pipeline adds semantic information to GPS trajectories by combining language-model-based point-of-interest classification with probabilistic activity inference. It links locations to visit purposes and supports analysis across regional datasets.</p></section>
 
-            <section class="project-gallery" data-aos="fade-up">
+            <section class="project-gallery">
                 <figure>
                     <img src="flow_diagram_new.png" alt="System Flow Diagram" loading="lazy" decoding="async">
-                    <figcaption>First application of LLM to POI classification with semantic information inference</figcaption>
+                    <figcaption>Language-model-based point-of-interest classification and activity inference.</figcaption>
                 </figure>
             </section>
 
-            <section class="key-contributions" data-aos="fade-up">
+            <section class="key-contributions">
                 <h2>Key Contributions</h2>
-                <ul>
-                    <li>A novel data mining framework integrating LLM-based POI classification with probabilistic activity inference algorithm, bridging spatial-temporal and natural language analyses in trajectory mining.</li>
-                    <li>Framework adaptability across various regional POI datasets without additional training, effectively handling incomplete data.</li>
-                    <li>First application of LLM to POI classification, achieving precise point-level inference through semantic information.</li>
-                </ul>
-            </section>
+                <ul><li>Combines point-of-interest classification with probabilistic inference of travel activities.</li><li>Applies the framework across regional point-of-interest datasets without additional training.</li></ul></section>
 
-            <section class="results" data-aos="fade-up">
+            <section class="results">
                 <h2>Results</h2>
                 <div class="results-highlight">
                     <ul>
@@ -82,7 +50,7 @@
                 </div>
             </section>
 
-            <section class="project-gallery" data-aos="fade-up">
+            <section class="project-gallery">
                 <div class="gallery-grid">
                     <figure>
                         <img src="poi_example_la_egypt.png" alt="POI Analysis" loading="lazy" decoding="async">
@@ -96,18 +64,9 @@
             </section>
         </div>
 
-        <div class="back-to-projects" data-aos="fade-up">
-            <a href="../../projects.html">← Back to Projects</a>
-        </div>
-    </main>
+        <section class="related-publications"><h2>Related Publications</h2><ul><li><a href="../../publications.html#semantic-trajectories">Semantic Trajectory Data Mining with LLM-Informed POI Classification</a></li></ul></section><p class="back-to-projects"><a href="../../projects.html">All research projects</a></p></main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
-    <script src="../../../js/main.js"></script>
+    <footer class="site-footer"><div class="container footer-content"><div><p>© 2026 Xishun Liao</p></div><p><a href="mailto:xishun.liao@ucf.edu">xishun.liao@ucf.edu</a></p></div></footer>
+<script src="../../../js/main.js" defer></script>
 </body>
-</html> 
+</html>

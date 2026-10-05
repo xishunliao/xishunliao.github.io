@@ -1,52 +1,46 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
-            // Ignore if just '#'
-            if (href === '#') return;
-            // Only intercept on-page anchors
-            const target = document.querySelector(href);
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-                history.pushState(null, '', href);
+document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const links = document.getElementById('primary-menu');
+    if (toggle && links) {
+        const container = toggle.closest('.nav-container');
+        const mobile = window.matchMedia('(max-width: 680px)');
+        function closeMenu() {
+            toggle.setAttribute('aria-expanded', 'false');
+            links.classList.remove('active');
+        }
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') !== 'true';
+            toggle.setAttribute('aria-expanded', String(expanded));
+            links.classList.toggle('active', expanded);
+        });
+        links.addEventListener('click', event => {
+            if (event.target.closest('a')) closeMenu();
+        });
+        document.addEventListener('click', event => {
+            if (!container.contains(event.target)) closeMenu();
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+                closeMenu();
+                toggle.focus();
             }
         });
-    });
-
-    // Mobile menu toggle
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const navLinks = document.getElementById('primary-menu');
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener('click', function() {
-            const expanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', String(!expanded));
-            navLinks.classList.toggle('active');
-        });
-
-        document.addEventListener('click', function(event) {
-            if (!event.target.closest('.navbar') && navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
-                menuToggle.setAttribute('aria-expanded', 'false');
-            }
-        });
+        mobile.addEventListener('change', closeMenu);
+        // Navigation remains visible when JavaScript is unavailable.
+        container.classList.add('menu-ready');
     }
 
-    // Set active nav link based on current path (basic)
-    const currentPath = window.location.pathname.replace(/\/index\.html$/, '/');
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        const linkPath = link.getAttribute('href');
-        if (!linkPath) return;
-        if (linkPath.endsWith('projects.html') && currentPath.includes('/pages/projects')) {
-            link.classList.add('active');
-        } else if (linkPath.endsWith('publications.html') && currentPath.includes('/pages/publications')) {
-            link.classList.add('active');
-        } else if (linkPath.startsWith('#') && (currentPath === '/' || currentPath.endsWith('/xishunliao.github.io/'))) {
-            // Home anchors considered active only on homepage; optional enhancement
-        }
-    });
-}); 
+    // Keep every item in the HTML; create a native disclosure only when needed.
+    const news = document.querySelector('.news-list');
+    if (news && news.children.length > 5) {
+        const archive = document.createElement('details');
+        archive.className = 'news-archive';
+        const summary = document.createElement('summary');
+        summary.textContent = 'Earlier news';
+        const older = document.createElement('ul');
+        older.className = 'news-list';
+        [...news.children].slice(5).forEach(item => older.append(item));
+        archive.append(summary, older);
+        news.after(archive);
+    }
+});

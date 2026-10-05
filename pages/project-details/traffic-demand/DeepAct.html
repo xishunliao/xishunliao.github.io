@@ -17,12 +17,17 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     body { font-size: 13px; }
 .node { stroke-width: 1.5px; }
 
+.demo-home-nav { position: sticky; top: 0; z-index: 100; padding: 12px 16px; background: #fff; border-bottom: 1px solid #e3e8ec; margin-bottom: 16px; }
+.demo-home-nav .back-home { display: inline-flex; align-items: center; gap: 8px; padding: 5px 10px; border: 1px solid #e3e8ec; border-radius: 4px; font: 500 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #202b36; text-decoration: none; }
+.demo-home-nav .back-home:hover { background: #f7f9fb; }
+.demo-home-nav .back-home:focus-visible { outline: 2px solid #21639c; outline-offset: 3px; }
 </style>
 </head>
 
 <meta charset="utf-8">
 
 <body>
+<nav class="demo-home-nav" aria-label="Home"><a class="back-home" href="../../../index.html"><span aria-hidden="true">←</span> Back to home</a></nav>
     <div id="main-wrapper">
     <div id="sidebar">
     <div id="current_time">00:15</div>
