@@ -32,14 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keep every item in the HTML; create a native disclosure only when needed.
     const news = document.querySelector('.news-list');
-    if (news && news.children.length > 5) {
+    const visibleCount = Number(news?.dataset.visibleCount) || 5;
+    if (news && news.children.length > visibleCount) {
         const archive = document.createElement('details');
         archive.className = 'news-archive';
         const summary = document.createElement('summary');
         summary.textContent = 'Earlier news';
         const older = document.createElement('ul');
         older.className = 'news-list';
-        [...news.children].slice(5).forEach(item => older.append(item));
+        [...news.children].slice(visibleCount).forEach(item => older.append(item));
         archive.append(summary, older);
         news.after(archive);
     }
